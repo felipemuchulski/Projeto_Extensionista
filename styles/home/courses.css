@@ -1,0 +1,31 @@
+.courses h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.courses-imgs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.courses-imgs a {
+  display: block;
+  height: 230px;
+  width: 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.html-css {
+  background-image: url("../../images/html-css.webp");
+}
+
+.scratch {
+  background-image: url("../../images/scratch.jpg");
+}
+
+.javascript {
+  background-image: url("../../images/javascript.jpg");
+}
