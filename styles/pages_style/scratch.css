@@ -7,12 +7,14 @@
    margin-left: 250px;
    width: 1000px;
 
-   border: 1px solid red;
 }
 
 .conteudo_titulo {
     color: #293647;
-    font-family: "Sixtyfour Convergence", sans-serif;
+    font-family: "Rowdies", serif;
+    font-weight: 700;
+    font-size: 40px;
+    font-style: normal;
 
     align-items: center;
     text-align: center;
