@@ -1,0 +1,46 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#scratch .box_text,
+#web .box_text {
+  margin-left: 20px;
+}
+
+#scratch main,
+#web main {
+  display: flex;
+  gap: 60px;
+}
+
+.topics_sidebar {
+  display: flex;
+  flex-direction: column;
+
+  top: 160px;
+  margin-left: 30px;
+  position: sticky;
+  width: 180px;
+}
+
+.topics_sidebar a {
+  margin-bottom: 10px;
+}
+
+.topics_sidebar details {
+  display: flex;
+  flex-direction: column;
+}
+
+.topics_sidebar details a,
+.topics_sidebar summary {
+  margin-bottom: 5px;
+}
+
+.topics_sidebar details a:nth-child(n + 2) {
+  margin-left: 16px;
+}
+
+.topics_sidebar a:hover {
+  text-decoration: underline;
+}
