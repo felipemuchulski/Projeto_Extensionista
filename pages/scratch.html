@@ -1,82 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
-    <!-- <link rel="stylesheet" href="/styles/pages_style/scratch.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
+    />
+    <!--Adicionei uma biblioteca para dar enfase no pre code para mostrar o código no site-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
     <title>Byte Club</title>
-</head>
+  </head>
 
-<body id="scratch">
+  <body id="scratch">
     <header>
-        <nav class="header-nav">
-            <a class="nav-item" href="/index.html">
-                <h1>Byte Club</h1>
-            </a>
-            <a class="nav-item" href="/index.html">Menu</a>
-            <a class="nav-item" href="/pages/web.html">WEB</a>
-            <a class="nav-item" href="#">Scratch</a>
-            <a class="nav-item" href="/pages/conteudo_js.html">JavaScript</a>
-
-        </nav>
-        <div class="header-search">
-            <input type="text" id="inptPesquisa" placeholder="Pesquisar...">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+      <nav class="header-nav">
+        <a class="nav-item" href="/index.html">
+          <h1>Byte Club</h1>
+        </a>
+        <a class="nav-item" href="/index.html">Menu</a>
+        <a class="nav-item" href="/pages/web.html">HTML</a>
+        <a class="nav-item" href="#">Scratch</a>
+        <a class="nav-item" href="/pages/conteudo_js.html">CSS</a>
+      </nav>
+      <div class="header-search">
+        <input type="text" id="inptPesquisa" placeholder="Pesquisar..." />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
     </header>
 
-
     <main>
-        <div>
-            <div class="topics_sidebar">
-                <a href="">O que é programação em bloco?</a>
-                <a href="">Como funciona?</a>
-                <a href="">Como utilizamos?</a>
-                <a href="">Onde é utilizada?</a>
-            </div>
+      <div>
+        <div class="topics_sidebar">
+          <a href="">O que é programação em bloco?</a>
+          <a href="">Como funciona?</a>
+          <a href="">Como utilizamos?</a>
+          <a href="">Onde é utilizada?</a>
         </div>
-        <section class="box_text">
-            <div class="bloco_textos">
-                <h1 class="conteudo_titulo">Programação em Bloco</h1>
-                <!--Fazer estilo para introdução-->
-                <p class="text_content_strong"><strong>O que é progamação em bloco?</strong><br></p> <!--Separar por tópicos-->
-                <p class="text_content_medium">A programação em blocos é uma linguagem de programação visual que permite criar programas arrastando e soltando blocos visuais. É uma forma lúdica de aprender programação, que ajuda a compreender os conceitos básicos da área sem os desafios da codificação tradicional.</p>
+      </div>
+      <section class="box_text">
+        <div class="bloco_textos">
+          <h1 class="conteudo_titulo">Programação em Bloco</h1>
+          <!--Fazer estilo para introdução-->
+          <p class="text_content_strong">
+            <strong>O que é progamação em bloco?</strong><br />
+          </p>
+          <!--Separar por tópicos-->
+          <p class="text_content_medium">
+            A programação em blocos é uma abordagem inovadora e visual para a
+            criação de programas de computador. Neste método, os usuários
+            constroem seus programas arrastando e soltando blocos visuais
+            pré-definidos, cada um representando um comando ou função
+            específica. Esta técnica elimina a necessidade de digitar código
+            tradicional, tornando o processo de programação mais acessível e
+            intuitivo, especialmente para iniciantes. Esta forma de programação
+            oferece uma experiência lúdica, permitindo que os estudantes se
+            concentrem na lógica e na estrutura do programa, em vez de se
+            preocuparem com a sintaxe (escrita) complexa das linguagens de
+            programação tradicionais. Ao utilizar blocos coloridos e
+            interativos, a programação em blocos torna mais fácil a visualização
+            do fluxo do programa e a compreensão de conceitos fundamentais de
+            programação.
+          </p>
 
-                <p class="text_content_strong"><strong>Como funciona ?</strong></p>
-                <p class="text_content_medium">A programação em blocos funciona de forma semelhante a um quebra-cabeça, onde cada bloco é um comando. Ao montar uma sequência de blocos, é possível executar uma atividade.
-                    Para programar em blocos, é preciso arrastar e encaixar os blocos na ordem desejada. Os blocos são pré-definidos e possuem uma escrita correta, permitindo que você se concentre na lógica do programa e não na digitação de cada comando.
-                </p>
+          <p class="text_content_strong"><strong>Como funciona ?</strong></p>
+          <p class="text_content_medium">
+            A programação em blocos opera de maneira semelhante a um
+            quebra-cabeça digital. Cada bloco representa um comando ou uma
+            instrução específica, e estes blocos são projetados para se
+            encaixarem de maneiras específicas, garantindo que apenas
+            combinações logicamente válidas sejam possíveis. Ao montar uma
+            sequência de blocos, o usuário está criando um algoritmo ou um
+            programa. A interface visual permite que os estudantes vejam
+            instantaneamente como os diferentes componentes do programa se
+            relacionam entre si. Isso facilita a compreensão de conceitos como
+            sequência, loops, condicionais e funções de uma maneira mais visível
+            e menos abstrata. Para criar um programa usando blocos, o usuário
+            seleciona os blocos desejados de uma caixa de opções disponíveis e
+            os arrasta para a área de trabalho. Os blocos são encaixados na
+            ordem desejada para criar a lógica do programa. Como os blocos são
+            pré-definidos e possuem uma sintaxe correta embutida, o estudante
+            pode se concentrar inteiramente na lógica do programa e no fluxo de
+            execução, em vez de se preocupar com erros de digitação.
+          </p>
+          <pre>
+            <code class="scratch-code">
+                &lt;p>quando clicar em bandeira verde&lt;/p&gt; 
+                &lt;p>p>vá para x: 0 y: 0&lt;/p&gt;
+                &lt;p>mova 10 passos&lt;/p&gt; 
+            </code>
+          </pre>
 
-                <p class="text_content_strong"><strong>Como utilizamos</strong></p>
-                <p class="text_content_medium">Começamos decidindo a função que vamos executar (mover, girar, fazer um som). Em seguida escolhemos os blocos que executam as funções que definimos anteriormente. Depois de escolhidos os blocos, arrastamos para a página em branco do meio onde vamos montar nossa programação. Precisamos encaixar os blocos de maneira lógica de modo que o nosso personagem execute nosso passo a passo corretamente. Ao fim executamos nossa programação onde podemos observá-la no lado direito da tela.</p>
+          <p class="text_content_strong"><strong>Como utilizamos</strong></p>
+          <p class="text_content_medium">
+            O processo de utilização da programação em blocos geralmente segue
+            uma série de etapas bem definidas:
+          </p>
+          <ul class="list_content">
+            <li class="text_content_medium">
+              Planejamento: começamos definindo o objetivo do nosso programa.
+              Isso pode ser algo simples como fazer um personagem se mover na
+              tela, ou algo mais complexo como criar um jogo interativo.
+            </li>
 
-                <p class="text_content_strong"><strong>Onde a programação em blocos é utilizada?</strong></p>
-                <p class="text_content_medium">A programação em blocos pode ser utilizada em diferentes atividades, como por exemplo:</p>
-                <ul class="list_content">
-                    <li class="conteudo_lista">Aprendizado de programação
-                        Introduzindo de forma lúdica a programação, facilitando o processo de aprendizagem.
-                    </li>
-                    <li class="conteudo_lista">
-                        Criação de jogos
-                        Com a programação em blocos é possível criar jogos simples através dos blocos pré-programados.
-                    </li>
-                    <li class="conteudo_lista">
-                        Robótica educacional
-                        A programação em blocos pode ser utilizada na introdução da robótica através de kits, como por exemplo o Lego Education Mindstorms.
+            <li class="text_content_medium">
+              Seleção de blocos: com base no objetivo, escolhemos os blocos
+              apropriados que executarão as funções necessárias. Por exemplo, se
+              queremos que um personagem se mova, procuramos blocos relacionados
+              a movimento.
+            </li>
 
-                    </li>
-                </ul>
+            <li class="text_content_medium">
+              Montagem do programa: arrastamos os blocos selecionados para a
+              área de trabalho central, que geralmente é uma página em branco
+              onde montamos nossa programação. É aqui que a lógica do programa
+              começa a tomar forma.
+            </li>
 
-                <img src="" alt="imagem de um robo criado na robotica">
-                <p class="text_content_medium">Aqui vamos tocar </p>
+            <li class="text_content_medium">
+              Organização lógica: encaixamos os blocos de maneira lógica e
+              sequencial. A ordem e a estrutura dos blocos são cruciais, pois
+              determinam como o programa será executado. Por exemplo, se
+              queremos que um personagem se mova e depois faça um som,
+              precisamos garantir que os blocos estejam nessa ordem específica.
+            </li>
 
-                <p><strong>Projeto Extensionista</strong></p>
-            </div>
-        </section>
+            <li class="text_content_medium">
+              Teste e execução: depois montar o programa, podemos executá-lo
+              para ver os resultados. Na maioria das plataformas de programação
+              em blocos, como o Scratch, os resultados são visíveis
+              instantaneamente em uma área de visualização, geralmente
+              localizada no lado direito da tela.
+            </li>
+
+            <li class="text_content_medium">
+              Refinamento: se o programa não funcionar como esperado, podemos
+              facilmente identificar onde estão os problemas, graças à natureza
+              visual dos blocos. Ajustamos a ordem dos blocos, adicionamos ou
+              removemos comandos conforme necessário.
+            </li>
+          </ul>
+
+          <p class="text_content_strong">
+            <strong>Onde a programação em blocos é utilizada?</strong>
+          </p>
+          <p class="text_content_medium">
+            A programação em blocos pode ser utilizada em diferentes atividades,
+            como por exemplo:
+          </p>
+          <ul class="list_content">
+            <li class="conteudo_lista">
+              Aprendizado de programação Introduzindo de forma lúdica a
+              programação, facilitando o processo de aprendizagem.
+            </li>
+            <li class="conteudo_lista">
+              Criação de jogos Com a programação em blocos é possível criar
+              jogos simples através dos blocos pré-programados.
+            </li>
+            <li class="conteudo_lista">
+              Robótica educacional A programação em blocos pode ser utilizada na
+              introdução da robótica através de kits, como por exemplo o Lego
+              Education Mindstorms.
+            </li>
+          </ul>
+
+          <img src="" alt="imagem de um robo criado na robotica" />
+          <p class="text_content_medium">Aqui vamos tocar</p>
+
+          <p><strong>Projeto Extensionista</strong></p>
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>

@@ -1,69 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
+    />
+    <!--Adicionei uma biblioteca para dar enfase no pre code para mostrar o código no site-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
     <title>Byte Club</title>
-</head>
+  </head>
 
-<body id="web">
+  <body id="web">
     <header>
-        <nav class="header-nav">
-            <a class="nav-item" href="/index.html">
-                <h1>Byte Club</h1>
-            </a>
-            <a class="nav-item" href="/index.html">Menu</a>
-            <a class="nav-item" href="#">WEB</a>
-            <a class="nav-item" href="/pages/scratch.html">Scratch</a>
-            <a class="nav-item" href="/pages/conteudo_js.html">JavaScript</a>
-
-        </nav>
-        <div class="header-search">
-            <input type="text" id="inptPesquisa" placeholder="Pesquisar...">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+      <nav class="header-nav">
+        <a class="nav-item" href="/index.html">
+          <h1>Byte Club</h1>
+        </a>
+        <a class="nav-item" href="/index.html">Menu</a>
+        <a class="nav-item" href="#">HTML</a>
+        <a class="nav-item" href="/pages/scratch.html">Scratch</a>
+        <a class="nav-item" href="/pages/conteudo_js.html">CSS</a>
+      </nav>
+      <div class="header-search">
+        <input type="text" id="inptPesquisa" placeholder="Pesquisar..." />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
     </header>
 
-
     <main>
-        <div>
-            <div class="topics_sidebar">
-                <a href="#oq">O que é HTML?</a>
-                <a href="#como">Como funciona?</a>
-                <details>
-                    <summary><a href="#tags">Principais tags</a></summary>
-                    <a href="#elemento_raiz">Elemento raiz</a>
-                    <a href="#metadados">Metadados</a>
-                    <a href="#secoes">Seções</a>
-                    <a href="#agrupamento">Agrupamento</a>
-                    <a href="#texto">Texto</a>
-                    <a href="#conteudo_inc">Conteúdo incorporado</a>
-                    <a href="#formularios">Formulários</a>
-                </details>
-            </div>
+      <div>
+        <div class="topics_sidebar">
+          <a href="#O_que_e_HTML">O que é HTML?</a>
+          <a href="#C">Como funciona?</a>
+          <details>
+            <summary><a href="#tags">Principais tags</a></summary>
+            <a href="#elemento_raiz">Elemento raiz</a>
+            <a href="#metadados">Metadados</a>
+            <a href="#secoes">Seções</a>
+            <a href="#agrupamento">Agrupamento</a>
+            <a href="#texto">Texto</a>
+            <a href="#conteudo_inc">Conteúdo incorporado</a>
+            <a href="#formularios">Formulários</a>
+          </details>
         </div>
-        <section class="box_text">
-            <div class="bloco_textos">
-                <h1 class="conteudo_titulo">HTML & CSS</h1>
-                <!--Fazer estilo para introdução-->
-                <p id="oq" class="text_content_strong"><strong>O que é HTML?</strong><br></p> <!--Separar por tópicos-->
-                <p class="text_content_medium">
-                    HTML é a sigla para Hiper Text Markup Language, traduzido para português como Linguagem de Marcação de Hipertexto. Mas afinal o que ela é? Vamos imaginar que estamos construindo uma casa de lego, cada bloquinho é importante para construir a casa, desde o teto até o chão, na internet o HTML funciona como os blocos, sendo a base de toda a estrutura de uma página Web. <br>
-                    O HTML não é uma linguagem de programação, mas é a linguagem que traduz o que queremos que nossa página web apresente, podemos usar o exemplo de um corpo humano, onde o HTML seria o esqueleto do nosso corpo, a parte em que imagem esqueleto html
-                </p>
+      </div>
+      <section class="box_text">
+        <div class="bloco_textos">
+          <h1 class="conteudo_titulo">HTML</h1>
+          <!--Fazer estilo para introdução-->
+          <p id="#O_que_e_HTML" class="text_content_strong">
+            <strong>O que é HTML?</strong><br />
+          </p>
+          <!--Separar por tópicos-->
+          <p class="text_content_medium">
+            HTML é a sigla para Hiper Text Markup Language, traduzido para
+            português como Linguagem de Marcação de Hipertexto. Mas afinal o que
+            ela é? Vamos imaginar que estamos construindo uma casa de lego, cada
+            bloquinho é importante para construir a casa, desde o teto até o
+            chão, na internet o HTML funciona como os blocos, sendo a base de
+            toda a estrutura de uma página Web. <br />
+            O HTML não é uma linguagem de programação, mas é a linguagem que
+            traduz o que queremos que nossa página web apresente, podemos usar o
+            exemplo de um corpo humano, onde o HTML seria o esqueleto do nosso
+            corpo, a parte em que imagem esqueleto html
+          </p>
 
-                <p id="como" class="text_content_strong"><strong>Como funciona ?</strong></p>
-                <p class="text_content_medium">
-                    De maneira simplificada no HTML precisamos escrever o código utilizando um editor de texto (mais a frente vamos conhecer), escrevendo as tags para estruturar nossa página. Depois do nosso código escrito e estruturado colocamos ele em uma página no nosso navegador que irá ler e mostrar na página o que escrevemos. <br>
-                    Tags são palavras especiais utilizadas no HTML que desempenham funçõesespecíficas como de parágrafo, título, imagem… <br>
-                    Vamos usar um exemplo prático para entendermos como o HTML funciona:
-                </p>
+          <p id="Como" class="text_content_strong">
+            <strong>Como funciona ?</strong>
+          </p>
+          <p class="text_content_medium">
+            De maneira simplificada no HTML precisamos escrever o código
+            utilizando um editor de texto (mais a frente vamos conhecer),
+            escrevendo as tags para estruturar nossa página. Depois do nosso
+            código escrito e estruturado colocamos ele em uma página no nosso
+            navegador que irá ler e mostrar na página o que escrevemos. <br />
+            Tags são palavras especiais utilizadas no HTML que desempenham
+            funçõesespecíficas como de parágrafo, título, imagem… <br />
+            Vamos usar um exemplo prático para entendermos como o HTML funciona:
+          </p>
 
-                <pre>
-                    <code>
+          <pre>
+                    <code class="language-html">
                     &lt;!DOCTYPE html&gt;
                     &lt;html&gt;
                         &lt;head&gt;
@@ -78,90 +105,113 @@
                     </code>
                 </pre>
 
-                <p class="text_content_medium">
-                    Vamos explicar o que cada linha quer dizer:
-                </p>
+          <p class="text_content_medium">
+            Vamos explicar o que cada linha quer dizer:
+          </p>
 
-                <code>&lt;!DOCTYPE html&gt;</code>
-                <p class="text_content_medium">
-                    Essa linha declara o documento que estamos criando, neste caso HTML e serve para que nosso navegador interprete o código de maneira correta.
-                </p>
+          <code>&lt;!DOCTYPE html&gt;</code>
+          <p class="text_content_medium">
+            Essa linha declara o documento que estamos criando, neste caso HTML
+            e serve para que nosso navegador interprete o código de maneira
+            correta.
+          </p>
 
+          <code>&lt;html&gt;</code>
+          <p class="text_content_medium">
+            Essa tag é a raiz do documento, onde todas as próximas tags que
+            iremos inserir estarão dentro dessa tag.
+          </p>
+
+          <code>&lt;head&gt;</code>
+          <p class="text_content_medium">
+            A seção head contém informações sobre o nosso código que não serão
+            exibidos diretamente na página.
+          </p>
+
+          <code>&lt;title&gt;</code>
+          <p class="text_content_medium">
+            Essa tag define o título da página. (print da aba com nome)
+          </p>
+
+          <code>&lt;body&gt;</code>
+          <p class="text_content_medium">
+            A seção body guarda todo o conteúdo visual da página, ou seja, tudo
+            que se vê em uma página web fica na seção do body.
+          </p>
+
+          <code>&lt;h1&gt;</code>
+          <p class="text_content_medium">
+            Define o primeiro título, o maior título da página.
+          </p>
+
+          <code>&lt;p&gt;</code>
+          <p class="text_content_medium">Define um parágrafo.</p>
+
+          <code>&lt;img&gt;</code>
+          <p class="text_content_medium">Insere uma foto no documento.</p>
+
+          <p class="text_content_medium">
+            Depois de vermos todas essas linhas fica mais claro de entender o
+            que todo quele código acima quer dizer, de maneira prática se
+            executássemos aquele código o que apareceria na tela seria algo
+            assim:
+          </p>
+          <img src="../images/cat.png" alt="imagem de página web" />
+
+          <p id="tags" class="text_content_strong">
+            <strong>Principais tags HTML</strong>
+          </p>
+          <p class="text_content_medium">
+            Aqui vamos conhecer as principais tags do HTML, como são muitas,
+            aqui estarão as mais utilizadas e cada uma explicada de maneira
+            prática onde deve ser utilizada. Antes de explicarmos sobre as tags
+            vamos entender o porque das tags serem sempre escritas assim <>.
+          </p>
+          <p class="text_content_medium">
+            As tags funcionam de maneira semelhante a etiquetas para
+            identificarmos o conteúdo de cada conteúdo de código que estamos
+            escrevendo, exemplificando, a tag <code>&lt;p&gt;</code> indica que
+            todo conteúdo dentro dela é um parágrafo, e a tag
+            <code>&lt;/p&gt;</code> indica o fechamento do nosso parágrafo. Essa
+            mesma estrutura funciona basicamente igual para todas as tags
+            escritas no HTML.
+          </p>
+
+          <p class="text_content_medium">
+            Vamos explicar as tags por categorias:
+          </p>
+
+          <ul class="text_content_medium">
+            <li id="elemento_raiz">Elemento raiz</li>
+            <ul>
+              <li>
                 <code>&lt;html&gt;</code>
-                <p class="text_content_medium">
-                    Essa tag é a raiz do documento, onde todas as próximas tags que iremos inserir estarão dentro dessa tag.
+                <p>
+                  Envolve todo o conteúdo HTML, expressando que estamos tratando
+                  de um documento HTML
                 </p>
+              </li>
+            </ul>
 
+            <li id="metadados">Metadados</li>
+            <ul>
+              <p>
+                Metadados são informações de descrevem o conteúdo da uma página
+                web mas não são exibidos visualmente na página.
+              </p>
+              <li>
                 <code>&lt;head&gt;</code>
-                <p class="text_content_medium">
-                    A seção head contém informações sobre o nosso código que não serão exibidos diretamente na página.
+                <p>
+                  O head no HTML funciona como uma capa de livro que dá
+                  informações sobre autor, título, editora e gênero do livro,
+                  essa seção te da informações sobre a página e não são
+                  necessariamente exibidas nela. No exemplo a seguir podemos ver
+                  um exemplo mostrando apenas a seção “head” da nossa página,
+                  onde está guardando informações do título da nossa página HTML
+                  4 e a tag meta está definindo os metadados, como descrição e
+                  palavraschave do nosso site.
                 </p>
-
-                <code>&lt;title&gt;</code>
-                <p class="text_content_medium">
-                    Essa tag define o título da página.
-                    (print da aba com nome)
-                </p>
-
-                <code>&lt;body&gt;</code>
-                <p class="text_content_medium">
-                    A seção body guarda todo o conteúdo visual da página, ou seja, tudo que se vê em uma página web fica na seção do body.
-                </p>
-
-                <code>&lt;h1&gt;</code>
-                <p class="text_content_medium">
-                    Define o primeiro título, o maior título da página.
-                </p>
-
-                <code>&lt;p&gt;</code>
-                <p class="text_content_medium">
-                    Define um parágrafo.
-                </p>
-
-                <code>&lt;img&gt;</code>
-                <p class="text_content_medium">
-                    Insere uma foto no documento.
-                </p>
-
-                <p class="text_content_medium">
-                    Depois de vermos todas essas linhas fica mais claro de entender o que todo quele código acima quer dizer, de maneira prática se executássemos aquele código o que apareceria na tela seria algo assim:
-                </p>
-                <img src="../images/cat.png" alt="imagem de página web">
-
-                <p id="tags" class="text_content_strong"><strong>Principais tags HTML</strong></p>
-                <p class="text_content_medium">
-                    Aqui vamos conhecer as principais tags do HTML, como são muitas, aqui
-                    estarão as mais utilizadas e cada uma explicada de maneira prática onde deve
-                    ser utilizada. Antes de explicarmos sobre as tags vamos entender o porque das
-                    tags serem sempre escritas assim <>.
-                </p>
-                <p class="text_content_medium">
-                    As tags funcionam de maneira semelhante a etiquetas para identificarmos o conteúdo de cada conteúdo de código que estamos escrevendo, exemplificando, a tag <code>&lt;p&gt;</code> indica que todo conteúdo dentro dela é um parágrafo, e a tag <code>&lt;/p&gt;</code> indica o fechamento do nosso parágrafo. Essa mesma
-                    estrutura funciona basicamente igual para todas as tags escritas no HTML.
-                </p>
-
-                <p class="text_content_medium">
-                    Vamos explicar as tags por categorias:
-                </p>
-
-                <ul class="text_content_medium">
-                    <li id="elemento_raiz">Elemento raiz</li>
-                    <ul>
-                        <li><code>&lt;html&gt;</code>
-                            <p>
-                                Envolve todo o conteúdo HTML, expressando que estamos tratando de um documento HTML
-                            </p>
-                        </li>
-                    </ul>
-
-                    <li id="metadados">Metadados</li>
-                    <ul>
-                        <p>Metadados são informações de descrevem o conteúdo da uma página web mas não são exibidos visualmente na página.</p>
-                        <li><code>&lt;head&gt;</code>
-                            <p>
-                                O head no HTML funciona como uma capa de livro que dá informações sobre autor, título, editora e gênero do livro, essa seção te da informações sobre a página e não são necessariamente exibidas nela. No exemplo a seguir podemos ver um exemplo mostrando apenas a seção “head” da nossa página, onde está guardando informações do título da nossa página HTML 4 e a tag meta está definindo os metadados, como descrição e palavraschave do nosso site.
-                            </p>
-                            <pre>
+                <pre>
                                 <code>
                                 &lt;head&gt;
                                     &lt;title&gt;Meu primeiro site&lt;/title&gt;
@@ -170,39 +220,68 @@
                                 &lt;head&gt;
                                 </code>
                             </pre>
-                        </li>
+              </li>
 
-                        <li><code>&lt;title&gt;</code>
-                            <p>
-                                O title é o título da nossa página, serve como a identidade do nosso site e também como um mecanismo de pesquisa no momento da busca por um site. No exemplo a seguir a seção “title” está dentro da nossa seção “head” que vimos anteriormente, e como já explicado ele define o título do nosso site na web.
-                            </p>
-                            <pre>
+              <li>
+                <code>&lt;title&gt;</code>
+                <p>
+                  O title é o título da nossa página, serve como a identidade do
+                  nosso site e também como um mecanismo de pesquisa no momento
+                  da busca por um site. No exemplo a seguir a seção “title” está
+                  dentro da nossa seção “head” que vimos anteriormente, e como
+                  já explicado ele define o título do nosso site na web.
+                </p>
+                <pre>
                                 <code>
                                 &lt;head&gt;
                                     &lt;title&gt;Meu primeiro site&lt;/title&gt;
                                 &lt;head&gt;
                                 </code>
                             </pre>
-                        </li>
+              </li>
 
-                        <li><code>&lt;link&gt;</code>
-                            <p>
-                                Essa tag define um link para um recurso externo ao nosso site ou interno no caso conectarmos uma página a outra, utilizado para vincular o arquivo CSS no documento HTML. No exemplo a seguir veremos a tag <code>&lt;a&gt;</code> que seria a tag ancora fazendo um link para uma página de exemplo fora do nosso site.
-                            </p>
-                            <code>&lt;a href="https://www.example.com" target="_blank" title="A"&gt;</code>
-                        </li>
-                    </ul>
+              <li>
+                <code>&lt;link&gt;</code>
+                <p>
+                  Essa tag define um link para um recurso externo ao nosso site
+                  ou interno no caso conectarmos uma página a outra, utilizado
+                  para vincular o arquivo CSS no documento HTML. No exemplo a
+                  seguir veremos a tag <code>&lt;a&gt;</code> que seria a tag
+                  ancora fazendo um link para uma página de exemplo fora do
+                  nosso site.
+                </p>
+                <code
+                  >&lt;a href="https://www.example.com" target="_blank"
+                  title="A"&gt;</code
+                >
+              </li>
+            </ul>
 
-                    <li id="secoes">Seções</li>
-                    <ul>
-                        <p>
-                            As seções são a organização do nosso conteúdo, voltando ao exemplo do livro, as seções seriam os capítulos do livro, separados por temas específicos, no HTML funciona de forma similar, onde cada seção serve para dividir o conteúdo da nossa página de maneira que seja fácil de visualizar no momento em que estamos montando o documento HTML.
-                        </p>
-                        <li><code>&lt;body&gt;</code>
-                            <p>
-                                A seção body é o corpo da nossa página, é onde todo o conteúdo visível da nossa página é exibido no navegador. Essa seção armazena o conteúdo principal da nossa página, como parágrafos, títulos, imagens e demais informações inseridas. No exemplo a seguir podemos visualizar somente a tag “body”, na primeira linha no <code>&lt;h1&gt;</code> estamos escrevendo um título para o corpo da nossa página, na tag <code>&lt;p&gt;</code> definimos um parágrafo exemplo, e na tag <code>&lt;img&gt;</code> inserimos uma foto no corpo da nossa página.
-                            </p>
-                            <pre>
+            <li id="secoes">Seções</li>
+            <ul>
+              <p>
+                As seções são a organização do nosso conteúdo, voltando ao
+                exemplo do livro, as seções seriam os capítulos do livro,
+                separados por temas específicos, no HTML funciona de forma
+                similar, onde cada seção serve para dividir o conteúdo da nossa
+                página de maneira que seja fácil de visualizar no momento em que
+                estamos montando o documento HTML.
+              </p>
+              <li>
+                <code>&lt;body&gt;</code>
+                <p>
+                  A seção body é o corpo da nossa página, é onde todo o conteúdo
+                  visível da nossa página é exibido no navegador. Essa seção
+                  armazena o conteúdo principal da nossa página, como
+                  parágrafos, títulos, imagens e demais informações inseridas.
+                  No exemplo a seguir podemos visualizar somente a tag “body”,
+                  na primeira linha no <code>&lt;h1&gt;</code> estamos
+                  escrevendo um título para o corpo da nossa página, na tag
+                  <code>&lt;p&gt;</code> definimos um parágrafo exemplo, e na
+                  tag <code>&lt;img&gt;</code> inserimos uma foto no corpo da
+                  nossa página.
+                </p>
+                <pre>
                                 <code>
                                 &lt;body&gt;
                                     &lt;h1&gt;Bem-vindo ao meu site!&lt;/h1&gt;
@@ -211,12 +290,23 @@
                                 &lt;/body&gt;   
                                 </code>
                             </pre>
-                        </li>
-                        <li><code>&lt;h1-h6&gt;</code>
-                            <p>
-                                As tags de título são exibidas de 1 até 6, que significa que podemos inserir 6 títulos diferentes no decorrer do nosso documento HTML. Essas tags definem o nível de importância de cada texto dentro da página, também servem para organização visual de quem está escrevendo do documento. Na hierarquia de título do <code>&lt;h1&gt;</code> serve como título principal da nossa página, e as tags <code>&lt;h2&gt;</code> até <code>&lt;h6&gt;</code> são usadas para títulos de seções menores dentro da página. No exemplo abaixo verificamos a utilização prática dos títulos e subtítulos e os parágrafos que podemos montar dentro deles.
-                            </p>
-                            <pre>
+              </li>
+              <li>
+                <code>&lt;h1-h6&gt;</code>
+                <p>
+                  As tags de título são exibidas de 1 até 6, que significa que
+                  podemos inserir 6 títulos diferentes no decorrer do nosso
+                  documento HTML. Essas tags definem o nível de importância de
+                  cada texto dentro da página, também servem para organização
+                  visual de quem está escrevendo do documento. Na hierarquia de
+                  título do <code>&lt;h1&gt;</code> serve como título principal
+                  da nossa página, e as tags <code>&lt;h2&gt;</code> até
+                  <code>&lt;h6&gt;</code> são usadas para títulos de seções
+                  menores dentro da página. No exemplo abaixo verificamos a
+                  utilização prática dos títulos e subtítulos e os parágrafos
+                  que podemos montar dentro deles.
+                </p>
+                <pre>
                                 <code>
                                     &lt;h1&gt;Título Principal&lt;/h1&gt;
                                     &lt;h2&gt;Subtítulo da Seção 1&lt;/h2&gt;
@@ -226,12 +316,15 @@
 
                                 </code>
                             </pre>
-                        </li>
-                        <li><code>&lt;footer&gt;</code>
-                            <p>
-                                A tag footer serve como o rodapé da nossa página, onde são colocadas informações sobre direitos autorais da página, quem desenvolveu e links de redes sociais.
-                            </p>
-                            <pre>
+              </li>
+              <li>
+                <code>&lt;footer&gt;</code>
+                <p>
+                  A tag footer serve como o rodapé da nossa página, onde são
+                  colocadas informações sobre direitos autorais da página, quem
+                  desenvolveu e links de redes sociais.
+                </p>
+                <pre>
                                 <code>
                                     &lt;footer&gt;
                                         &lt;p&gt;; 202 Meu site. Todos os direitos reservados.&lt;/p&gt;
@@ -239,20 +332,33 @@
                                    
                                 </code>
                             </pre>
-                        </li>
-                    </ul>
+              </li>
+            </ul>
 
-                    <li id="agrupamento">Agrupamento</li>
-                    <ul>
-                        <p>
-                            Dentro das seções que vimos no tópico anterior, temos os agrupamentos onde estamos dividindo mais uma vez os elementos da nossa página, o principal objetivo de todas essas divisões irão fazer sentido no momento em que trabalharmos no documento CSS onde precisaremos definir padrões de estilos comuns para todos os elementos dentro do grupo.
-                        </p>
+            <li id="agrupamento">Agrupamento</li>
+            <ul>
+              <p>
+                Dentro das seções que vimos no tópico anterior, temos os
+                agrupamentos onde estamos dividindo mais uma vez os elementos da
+                nossa página, o principal objetivo de todas essas divisões irão
+                fazer sentido no momento em que trabalharmos no documento CSS
+                onde precisaremos definir padrões de estilos comuns para todos
+                os elementos dentro do grupo.
+              </p>
 
-                        <li><code>&lt;div&gt;</code>
-                            <p>
-                                A tag “div” serve para agrupar outros elementos HTML e aplicar estilos em comum para todos os elementos. Podemos aplicar dentro de uma <code>&lt;div&gt;</code> parágrafos, imagens, etc, aplicando estilos para todos os elementos de uma só vez. No exemplo a seguir podemos observar que a “div” está sendo usada juntamente com a “class”, que serve como um rótulo para identificar e depois estilizar no documento CSS, as classes são utilizadas também para definir um estilo em comum.
-                            </p>
-                            <pre>
+              <li>
+                <code>&lt;div&gt;</code>
+                <p>
+                  A tag “div” serve para agrupar outros elementos HTML e aplicar
+                  estilos em comum para todos os elementos. Podemos aplicar
+                  dentro de uma <code>&lt;div&gt;</code> parágrafos, imagens,
+                  etc, aplicando estilos para todos os elementos de uma só vez.
+                  No exemplo a seguir podemos observar que a “div” está sendo
+                  usada juntamente com a “class”, que serve como um rótulo para
+                  identificar e depois estilizar no documento CSS, as classes
+                  são utilizadas também para definir um estilo em comum.
+                </p>
+                <pre>
                                 <code>
                                     &lt;div class="principal"&gt;
                                         &lt;h1&gt;Bem vindo ao meu site!&lt;/h1&gt;
@@ -261,12 +367,18 @@
                                    
                                 </code>
                             </pre>
-                        </li>
-                        <li><code>&lt;section&gt;</code>
-                            <p>
-                                A tag “section” serve para definir seções de um documento, funcionando como uma divisão de conteúdos de forma temática. Também ajuda na parte de leitura quando estamos escrevendo o código. No exemplo abaixo temos duas “section” onde cada uma delimita um tema, de quem somos nós e nosso objetivo, facilitando a leitura do nosso código
-                            </p>
-                            <pre>
+              </li>
+              <li>
+                <code>&lt;section&gt;</code>
+                <p>
+                  A tag “section” serve para definir seções de um documento,
+                  funcionando como uma divisão de conteúdos de forma temática.
+                  Também ajuda na parte de leitura quando estamos escrevendo o
+                  código. No exemplo abaixo temos duas “section” onde cada uma
+                  delimita um tema, de quem somos nós e nosso objetivo,
+                  facilitando a leitura do nosso código
+                </p>
+                <pre>
                                 <code>
                                     &lt;section&gt;
                                         &lt;h2&gt;Sobre nós&lt;/h2&gt;
@@ -279,16 +391,30 @@
                                    
                                 </code>
                             </pre>
-                        </li>
-                        <li><code>&lt;class&gt;</code>
-                            <p>
-                                A “class” como vimos anteriormente é a etiqueta que colocamos em um elemento HTML para identificá-lo, serve para encontrarmos as classes que vamos estilizar no documento CSS, que é a personalização do nosso documento HTML. No exemplo abaixo temos a tag “p” e definimos a classe “destaque”, o que significa que no documento CSS vai ter uma classificação diferente para esse parágrafo.
-                            </p>
-                            <code>&lt;p class="destaque"&gt;Este parágrafo terá um estilo diferente&lt;/p&gt;</code>
-                            <p>
-                                A título de curiosidade abaixo está uma linha de estilização do CSS exemplificando como seria a personalização desse parágrafo no CSS. No exemplo pegamos a classe que definimos entre aspas “destaque” e definimos o tamanho da fonte (40 pixels), também definimos a cor do parágrafo (azul).
-                            </p>
-                            <pre>
+              </li>
+              <li>
+                <code>&lt;class&gt;</code>
+                <p>
+                  A “class” como vimos anteriormente é a etiqueta que colocamos
+                  em um elemento HTML para identificá-lo, serve para
+                  encontrarmos as classes que vamos estilizar no documento CSS,
+                  que é a personalização do nosso documento HTML. No exemplo
+                  abaixo temos a tag “p” e definimos a classe “destaque”, o que
+                  significa que no documento CSS vai ter uma classificação
+                  diferente para esse parágrafo.
+                </p>
+                <code
+                  >&lt;p class="destaque"&gt;Este parágrafo terá um estilo
+                  diferente&lt;/p&gt;</code
+                >
+                <p>
+                  A título de curiosidade abaixo está uma linha de estilização
+                  do CSS exemplificando como seria a personalização desse
+                  parágrafo no CSS. No exemplo pegamos a classe que definimos
+                  entre aspas “destaque” e definimos o tamanho da fonte (40
+                  pixels), também definimos a cor do parágrafo (azul).
+                </p>
+                <pre>
                                 <code>
                                     .destaque{
                                         font-size: 40px;
@@ -296,83 +422,140 @@
                                     }
                                 </code>
                             </pre>
-                        </li>
-                    </ul>
+              </li>
+            </ul>
 
-                    <li id="texto">Texto</li>
-                    <ul>
-                        <p>
-                            Os textos no documento HTML são a organização textual do nosso arquivo, onde vamos dividir por algumas classes de estilos e modelos que podem ser escritos para serem visualizados na página web.
-                        </p>
+            <li id="texto">Texto</li>
+            <ul>
+              <p>
+                Os textos no documento HTML são a organização textual do nosso
+                arquivo, onde vamos dividir por algumas classes de estilos e
+                modelos que podem ser escritos para serem visualizados na página
+                web.
+              </p>
 
-                        <li><code>&lt;p&gt;</code>
-                            <p>
-                                A tag “p” como vimos anteriormente define um parágrafo de texto dentro do nosso documento. Ela serve para organizar nossos textos dentro do documento. No exemplo escrevemos um parágrafo simples.
-                            </p>
-                            <code>&lt;p&gt;Este é um exemplo de um parágrafo. Você pode escrever o&lt;/p&gt;</code>
-                        </li>
+              <li>
+                <code>&lt;p&gt;</code>
+                <p>
+                  A tag “p” como vimos anteriormente define um parágrafo de
+                  texto dentro do nosso documento. Ela serve para organizar
+                  nossos textos dentro do documento. No exemplo escrevemos um
+                  parágrafo simples.
+                </p>
+                <code
+                  >&lt;p&gt;Este é um exemplo de um parágrafo. Você pode
+                  escrever o&lt;/p&gt;</code
+                >
+              </li>
 
-                        <li><code>&lt;strong&gt;</code>
-                            <p>
-                                A tag “strong” serve para destacar um texto que definimos importante, geralmente o navegador lê o texto da tag “strong” em negrito. Com essa tag podemos fazer alterações específicas no texto destacado com uma estilização própria no CSS. No exemplo abaixo podemos ver o uso do
-                                strong dentro da tag “p” (parágrafo), onde estamos destacando o “muito importante” da nossa frase.
-                            </p>
-                            <code>&lt;p&gt;Este é um texto normal. Mas esta palavra é &lt;strong&gt;muito importante&lt;/strong&gt;&lt;/p&gt;</code>
-                        </li>
-                    </ul>
+              <li>
+                <code>&lt;strong&gt;</code>
+                <p>
+                  A tag “strong” serve para destacar um texto que definimos
+                  importante, geralmente o navegador lê o texto da tag “strong”
+                  em negrito. Com essa tag podemos fazer alterações específicas
+                  no texto destacado com uma estilização própria no CSS. No
+                  exemplo abaixo podemos ver o uso do strong dentro da tag “p”
+                  (parágrafo), onde estamos destacando o “muito importante” da
+                  nossa frase.
+                </p>
+                <code
+                  >&lt;p&gt;Este é um texto normal. Mas esta palavra é
+                  &lt;strong&gt;muito importante&lt;/strong&gt;&lt;/p&gt;</code
+                >
+              </li>
+            </ul>
 
-                    <li id="conteudo_inc">Conteúdo incorporado</li>
-                    <ul>
-                        <p>
-                            Esses conteúdos incorporados são imagens, vídeos, áudios que ficam localizados em outros locais, como por exemplo youtube, ou uma imagem do nosso computador que queremos mostrar direto em nossa página web. Podemos usar o exemplo de uma página dedicada a videoclipes mais famosos do youtube, porém estaremos dando uma introdução e explicando o que o artista quis dizer com aquela letra e clipe e logo abaixo queremos deixar o vídeo para nosso público ter acesso sem sair do nosso site e ir para outro assistir.
-                        </p>
+            <li id="conteudo_inc">Conteúdo incorporado</li>
+            <ul>
+              <p>
+                Esses conteúdos incorporados são imagens, vídeos, áudios que
+                ficam localizados em outros locais, como por exemplo youtube, ou
+                uma imagem do nosso computador que queremos mostrar direto em
+                nossa página web. Podemos usar o exemplo de uma página dedicada
+                a videoclipes mais famosos do youtube, porém estaremos dando uma
+                introdução e explicando o que o artista quis dizer com aquela
+                letra e clipe e logo abaixo queremos deixar o vídeo para nosso
+                público ter acesso sem sair do nosso site e ir para outro
+                assistir.
+              </p>
 
-                        <li><code>&lt;img&gt;</code>
-                            <p>
-                                Essa tag é utilizada para inserir imagens no documento HTML para serem visualizadas na página web. No exemplo abaixo utilizamos o termo “src” que é obrigatório e que especifica o endereço da imagem na internet, temos o termo “alt” que fornece uma descrição alternativa da imagem.
-                            </p>
-                            <code>&lt;img src="minha_imagem.jpg" alt="Descrição da imagem"&gt;</code>
-                        </li>
-                        <li><code>&lt;video&gt;</code>
-                            <p>
-                                A tag video, como o próprio nome diz, serve para incorporarmos vídeos na nossa página sem o usuário precisar sair dela para assistir. No exemplo abaixo utilizamos novamente o termo “src” para copiarmos o endereço do vídeo e utilizamos também o “controls” que adicionam os controles de reprodução do vídeo (play, pause, volume).
-                            </p>
-                            <code>&lt;video src="meu_video.mp4" controls&gt;&lt;/video&gt;</code>
-                        </li>
-                    </ul>
+              <li>
+                <code>&lt;img&gt;</code>
+                <p>
+                  Essa tag é utilizada para inserir imagens no documento HTML
+                  para serem visualizadas na página web. No exemplo abaixo
+                  utilizamos o termo “src” que é obrigatório e que especifica o
+                  endereço da imagem na internet, temos o termo “alt” que
+                  fornece uma descrição alternativa da imagem.
+                </p>
+                <code
+                  >&lt;img src="minha_imagem.jpg" alt="Descrição da
+                  imagem"&gt;</code
+                >
+              </li>
+              <li>
+                <code>&lt;video&gt;</code>
+                <p>
+                  A tag video, como o próprio nome diz, serve para incorporarmos
+                  vídeos na nossa página sem o usuário precisar sair dela para
+                  assistir. No exemplo abaixo utilizamos novamente o termo “src”
+                  para copiarmos o endereço do vídeo e utilizamos também o
+                  “controls” que adicionam os controles de reprodução do vídeo
+                  (play, pause, volume).
+                </p>
+                <code
+                  >&lt;video src="meu_video.mp4"
+                  controls&gt;&lt;/video&gt;</code
+                >
+              </li>
+            </ul>
 
-                    <li id="formularios">Formulários</li>
-                    <ul>
-                        <p>
-                            O grupo formulário são elementos que coletam informações do usuários em um site, desde fazer cadastros, fazer uma pesquisa, ou enviar mensagem.
-                        </p>
+            <li id="formularios">Formulários</li>
+            <ul>
+              <p>
+                O grupo formulário são elementos que coletam informações do
+                usuários em um site, desde fazer cadastros, fazer uma pesquisa,
+                ou enviar mensagem.
+              </p>
 
-                        <li><code>&lt;button&gt;</code>
-                            <p>
-                                Essa tag utilizamos para criar botões clicáveis na página, podemos adicionar funções de enviar o usuário para outra página, podemos enviar formulário, tudo isso através dessa tag. No exemplo criamos um botão que não desempenha nenhuma função, apenas aparecerá um botão na página web.
-                            </p>
-                            <code>&lt;button&gt;Clique aqui&lt;/button&gt;</code>
+              <li>
+                <code>&lt;button&gt;</code>
+                <p>
+                  Essa tag utilizamos para criar botões clicáveis na página,
+                  podemos adicionar funções de enviar o usuário para outra
+                  página, podemos enviar formulário, tudo isso através dessa
+                  tag. No exemplo criamos um botão que não desempenha nenhuma
+                  função, apenas aparecerá um botão na página web.
+                </p>
+                <code>&lt;button&gt;Clique aqui&lt;/button&gt;</code>
 
-                            <p>
-                                Aqui neste outro exemplo digitamos o link direcionando para o Instagram, então sempre que o usuário acessar esse botão ele será direcionado para o Instagram. O “target="_blank" serve para mandarmos nosso usuário para outra página sem que ele perca o acesso a nossa página, também estamos utilizando a tag <code>&lt;a&gt;</code> (âncora) para armazenar nosso link do Instagram.
-                            </p>
-                            <pre>
+                <p>
+                  Aqui neste outro exemplo digitamos o link direcionando para o
+                  Instagram, então sempre que o usuário acessar esse botão ele
+                  será direcionado para o Instagram. O “target="_blank" serve
+                  para mandarmos nosso usuário para outra página sem que ele
+                  perca o acesso a nossa página, também estamos utilizando a tag
+                  <code>&lt;a&gt;</code> (âncora) para armazenar nosso link do
+                  Instagram.
+                </p>
+                <pre>
                                 <code>
                                     &lt;a href="https://www.instagram.com/seu_usuario_instagram/"&gt;
                                         &lt;button&gt;Instagram&lt;/button&gt;
                                     &lt;/a&gt;
                                 </code>
                             </pre>
-                        </li>
-                    </ul>
-                </ul>
-                <p class="text_content_medium">
-                    Aqui se encerra o conteúdo sobre HTML, continue aprendendo mais sobre programação Web no próximo conteúdo sobre CSS onde vamos aprender a estilizar nossas páginas e esqueletos HTML.
-                </p>
-
-            </div>
-        </section>
+              </li>
+            </ul>
+          </ul>
+          <p class="text_content_medium">
+            Aqui se encerra o conteúdo sobre HTML, continue aprendendo mais
+            sobre programação Web no próximo conteúdo sobre CSS onde vamos
+            aprender a estilizar nossas páginas e esqueletos HTML.
+          </p>
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
