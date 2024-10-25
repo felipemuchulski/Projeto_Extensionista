@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" />
+  <!--Adicionei uma biblioteca para dar enfase no pre code para mostrar o código no site-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
+  <title>Byte Club</title>
+</head>
+
+<body id="css">
+  <header>
+    <nav class="header-nav">
+      <a class="nav-item" href="/index.html">
+        <h1>Byte Club</h1>
+      </a>
+      <a class="nav-item" href="/pages/web.html">HTML</a>
+      <a class="nav-item" href="#">CSS</a>
+      <a class="nav-item" href="/pages/scratch.html">Scratch</a>
+    </nav>
+    <div class="header-search">
+      <input type="text" id="inptPesquisa" placeholder="Pesquisar..." />
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+  </header>
+
+  <main>
+    <div>
+      <div class="topics_sidebar">
+        <a href="#O_que_e_css">O que é CSS?</a>
+        <a href="#Para_q_serve">Para que serve?</a>
+        <a href="#Como_funciona">Como funciona?</a>
+        <a href="#Sintaxe">Sintaxe básica</a>
+        <a href="#Modelo_caixa">Modelo de Caixa</a>
+        <a href="#Unidades_medida">Unidades de Medida</a>
+        <a href="#Seletores">Seletores</a>
+        <a href="#Estilizacao">Estilização</a>
+        <details>
+          <summary><a href="#Layout">Layout</a></summary>
+          <a href="#MDC">Modelo de Caixa</a>
+          <a href="#Flex">Flexbox</a>
+          <a href="#Gap">Gap</a>
+        </details>
+        <a href="#Unindo">Unindo HTML e CSS</a>
+      </div>
+    </div>
+    <section class="box_text">
+      <div class="bloco_textos">
+        <h1 class="conteudo_titulo">CSS</h1>
+        <p id="O_que_e_css" class="text_content_strong">
+          <strong>O que é CSS?</strong><br />
+        </p>
+        <p class="text_content_medium">
+          CSS significa Cascading Style Sheets, traduzindo para o português seria Folhas de Estilo em Cascata. Vamos pensar que estamos construindo uma casa de lego, já vimos que o HTML serve como os blocos de construção, paredes, janelas, teto, mas como esses itens se parecem, onde são posicionados? Assim conhecemos o CSS, onde ele vai dar o estilo a nossa página, deixar a posição dos itens no lugar que desejamos, escolher a cor de cada item, o posicionamento das imagens de maneira correta.
+        </p>
+
+        <p id="Para_q_serve" class="text_content_strong">
+          <strong>Para que serve o CSS?</strong>
+        </p>
+        <p class="text_content_medium">
+          O CSS serve para escolher cores, deixar títulos em uma coloração e fundo de outra, alterar tamanhos de imagens, títulos, organizar disposição dos itens inseridos no HTML.
+        </p>
+        <p class="text_content_medium">
+          O CSS é como se estivéssemos vestindo nosso esqueleto que seria nosso documento HTML, com o CSS podemos personalizar um documento HTML de muitas maneiras diferentes, isso só depende do modelo em que queremos apresentar nosso conteúdo.
+        </p>
+
+        <p id="Como_funciona" class="text_content_strong">
+          <strong>Como funciona?</strong>
+        </p>
+        <p class="text_content_medium">
+          Vamos imaginar que estamos com nossa casa de lego montada (HTML), precisamos escolher a cor das paredes, tamanho das janelas, onde cada item vai ficar posicionado, o CSS funciona de maneira parecida onde precisaremos escolher qual cor para nosso fundo vamos usar, qual vai ser a cor do nosso título e texto, onde vamos posicionar as imagens e demais itens que vamos inserir, e assim conforme ficar mais agradável escolhemos cores e posicionamentos.
+        </p>
+        <p class="text_content_medium">
+          Vamos observar o exemplo abaixo onde temos o documento HTML que seleciona o texto “Olá, mundo” atráves da tag <code>&lt;h1&gt;</code> (título) e no documento CSS abaixo onde ele diz que a cor (color) é verde (green) e que o tamanho da fonte (font-size) é 40 pixels.
+        </p>
+
+        <code>&lt;h1&gt;Olá, mundo!&lt;/h1&gt;</code>
+        <pre>
+          <code>
+            h1 {
+              color: green;
+              font-size: 40px;
+            }
+          </code>
+        </pre>
+
+        <p id="Sintaxe" class="text_content_strong">
+          <strong>Sintaxe Básica CSS</strong>
+        </p>
+        <p class="text_content_medium">
+          O CSS é um conjunto de regras que definem como os elementos da página web serão exibidos. Para isso temos regras que seguem uma estrutura simples.
+        </p>
+        <p class="text_content_medium">
+          &bull; Estrutura básica de uma regra CSS
+        </p>
+        <p class="text_content_medium">
+          No exemplo a seguir temos o “seletor” que está indicando qual elemento HTML estamos estilizando, o seletor pode ser uma tag (h1, p), a propriedade é a característica que estamos escolhendo (cor, tamanho da fonte, fundo) e por fim o valor que estamos atribuindo ao elemento (cor, tamanho, medida).
+        </p>
+        <pre>
+          <code>
+            seletor {
+              propriedade: valor;
+              }
+          </code>
+        </pre>
+
+        <p class="text_content_medium">No exemplo abaixo estamos utilizando como seletor a tag h1 e como propriedade estamos utilizando color (cor) e font-size (tamanho da fonte) e valor atribuindo estamos utilizando a cor azul e tamanho da fonte 36 pixels.</p>
+        <pre>
+          <code>
+            h1 {
+              color: blue;
+              font-size: 36px;
+              }
+          </code>
+        </pre>
+
+        <p id="Modelo_caixa" class="text_content_strong">
+          <strong>Modelo Caixa CSS</strong>
+        </p>
+        <p class="text_content_medium">
+          Vamos imaginar que cada elemento da nossa página seja uma caixa, essa caixa não é somente conteúdo visível, como os textos e imagens, mas também incluem os espaços ao redor, bordas e outras propriedades, esse conceito é conhecido como modelo de caixa CSS.
+        </p>
+        <ul class="text_content_medium">
+          <li>Componentes do modelo caixa</li>
+          <ol>
+            <li>Conteúdo (content): são os textos, imagens, conteúdos dentro da caixa;</li>
+            <li>Padding: é o espaço entre o conteúdo e a borda da caixa;</li>
+            <li>Borda (border): é a linha que delimita a caixa;</li>
+            <li>Margem (margin): é o espaço entre a caixa e os elementos ao redor.</li>
+          </ol>
+        </ul>
+        <p class="text_content_medium">No exemplo abaixo podemos ver ilustrado o modelo de caixa CSS .</p>
+        <img src="../images/box-model.png" alt="imagem do modelo de caixa">
+
+        <p class="text_content_medium">Precisamos entender o modelo em caixa pois é através dele que podemos controlar nosso layout e verificar onde as caixas melhor se encaixam.</p>
+        <ul class="text_content_medium">
+          <li>Propriedades CSS</li>
+          <ol>
+            <li>width: define a largura da caixa do conteúdo;</li>
+            <li>height: define a altura da caixa do conteúdo;</li>
+            <li>padding: define o espaço interno da caixa;</li>
+            <li>border: define a borda da caixa;</li>
+            <li>margin: define o espaço externo da caixa.</li>
+          </ol>
+        </ul>
+
+        <p class="text_content_medium">No exemplo abaixo definimos a largura de 200 pixels, altura de 150 pixels, borda preta de 1 pixel, espaço interno de 10 pixels e o espaçamento externo de 20 pixels</p>
+        <pre>
+          <code>
+            .caixa {
+              width: 200px; /*Define a largura*/
+              height: 150px; /*Define a altura*/
+              border: 1px solid black; /*Define a borda*/
+              padding: 10px; /*Define o espaço interno*/
+              margin: 20px; /*Define a margem*/
+            }
+          </code>
+        </pre>
+
+        <p id="Unidades_medida" class="text_content_strong">
+          <strong>Unidades de medida</strong>
+        </p>
+        <p class="text_content_medium">
+          As unidades de medida no CSS servem como métricas para definir o tamanho e posição dos elementos em uma página web. Podemos usar como analogia de volta a nossa casa de lego, onde precisamos saber o tamanho de cada bloco e onde encaixá-los sem que fique desproporcional, onde encaixar as portas e janelas de maneira que fique correto. Dentro das unidades de medidas existem as absolutas e relativas.
+        </p>
+
+        <ul class="text_content_medium">
+          <li>Unidades Absolutas
+            <p>As unidades absolutas servem para layouts fixos, onde não se adaptam a diferentes tamanhos de tela. Podemos usar como exemplo a tela do computador e a tela do celular, são de tamanho diferentes, portanto a quantidade de pixels que cabe em uma tela do computador não cabe nos pixels de uma tela de celular.</p>
+          </li>
+          <ol>
+            <li>px (pixel): é a mais comum, representa um ponto luminoso na tela;</li>
+            <li>cm (centímetro) e mm (milímetro): são unidades físicas, podem variar de tela a tela dependendo da resolução e não são muito utilizadas no design web.</li>
+          </ol>
+          <li>Unidades Relativas</li>
+          <p>As unidades relativas servem para layouts responsivos e escaláveis, onde combinadas podem criar designs flexíveis e adaptáveis para diferentes dispositivos.</p>
+          <ol>
+            <li> % (porcentagem): define um valor em relação ao tamanho do elemento
+              principal;</li>
+            <li>vw (viewport width): representa 1% da largura da viewport (janela do
+              navegador);</li>
+            <li>vh (viewport height): representa 1% da altura da viewport (janela do
+              navegador).</li>
+          </ol>
+        </ul>
+
+        <p id="Seletores" class="text_content_strong">
+          <strong>Seletores</strong>
+        </p>
+        <p class="text_content_medium">
+          Seletores são as etiquetas que escolhemos no nosso HTML anteriormente e que agora farão sentido no nosso CSS. Os seletores vão servir como etiquetas para puxarmos do nosso documento HTML e estilizar no nosso documento CSS, de maneira que cada item selecionado fique organizado e estilizado.
+        </p>
+        <p class="text_content_medium">
+          Os seletores são usados para aplicar estilos a elementos específicos sem que afete outros elementos, são também utilizados para manter o código CSS organizado e fácil de entender e por fim os estilos podem ser reutilizados em diferentes partes do site.
+        </p>
+
+        <ul class="text_content_medium">
+          <li>Tipos de Seletores</li>
+          <ol>
+            <li>Seletores de elementos (tags)
+              <p>Selecionam todos os elementos de um determinado tipo. No exemplo abaixo, selecionamos a tag <code>&lt;p&gt;</code> para estilizar, o que significa que todos os parágrafos que serão exibidos na tela serão azul (blue).</p>
+
+              <pre>
+                <code>
+                  p {
+                    color: blue; /* Todos os parágrafos ficarão azuis */
+                    }
+                </code>
+              </pre>
+            </li>
+
+            <li>Seletores de classes
+              <p>Selecionam elementos de uma determinada classe. No exemplo abaixo,
+                selecionamos a classe “.destaque” que estava no documento HTML, e
+                definimos que a cor dos elementos presentes nessa classe será
+                diferente das demais, no exemplo a cor padrão dos textos é preto mas
+                na classe destaque os textos presentes nela serão rosa (pink).
+              </p>
+              <pre>
+                  <code>
+                    .destaque {
+                      color: pink; /*Elementos presentes em .destaque ficarã
+                      }
+                  </code>
+              </pre>
+
+              <p>
+                No exemplo abaixo podemos ver a classe aplicada dentro no HTML que editamos acima no CSS.
+              </p>
+              <code>&lt;p class="destaque"&gt;Este texto será em rosa.&lt;/p&gt;</code>
+            </li>
+
+            <li>Seletores de id
+              <p>Selecionam um elemento único com ID específico. No exemplo abaixo, selecionamos o Id “cabecalho” do nosso HTML e mudamos a cor do fundo (background-color) para verde (green).</p>
+
+              <pre>
+                <code>
+                  #cabecalho {
+                    background-color: green;
+                    }
+                </code>
+              </pre>
+
+              <p>Abaixo podemos ver a ID sendo aplicada dentro do HTML, onde estamos dentro da tag “header” (cabeçalho) e estamos aplicando um ID (identificação) para nosso site.</p>
+              <code>&lt;header id="cabecalho"&gt;Cabeçalho do site&lt;/header&gt;</code>
+            </li>
+          </ol>
+        </ul>
+
+        <p id="Estilizacao" class="text_content_strong">
+          <strong>Estilização</strong>
+        </p>
+        <p class="text_content_medium">
+          A estilização no CSS é o processo de definir a aparência visual do site, é como se estivéssemos aplicando uma skin CSS para nosso esqueleto HTML, definindo cores, formatação das letras, tamanho, layout e imagens que melhor combinem com nosso design criado para página.
+        </p>
+        <p class="text_content_medium">
+          A estilização engloba tudo que vemos em um site, desde cores de fundo, formatação dos textos e a maneira em que montamos a disposição dos elementos na página. A seguir veremos os principais aspectos da estilização no CSS.
+        </p>
+
+        <ul class="text_content_medium">
+          <li>Cores
+            <p>
+              As cores são a tinta em que usamos para definir a cor das letras dos textos, títulos e cores de fundo da nossa página, são elas que trazem personalidade para a página. No CSS temos algumas maneiras de definir as cores.
+            </p>
+            <ol>
+              <li>Nome de cores
+                <p>Essas são as definições de cores mais comuns e possuem os nomes pré-definidos como red, blue, yellow, green, white, etc. São sempre escritas em inglês e é a forma mais fácil de definirmos uma cor. No exemplo abaixo estamos defindo a “color” para azul, ou seja, estamos defindo as cores dos textos e na linha abaixo no “background-color” estamos definindo um fundo cinza para nossa página.</p>
+
+                <pre>
+                  <code>
+                    p {
+                      color: blue; /* Texto azul */
+                      background-color: grey; /* Fundo cinza claro */
+                      }
+                  </code>
+                </pre>
+              </li>
+
+              <li>Hexadecimal
+                <p>
+                  As cores escritas em hexadecimais tem a representação baseada por números hexadecimais (0-9, A-F). Essa maneira de definir cores é a mais precisa, definindo tons específicos de cores. Essas cores podem ser encontradas em sites próprios de paleta de cores, onde podemos procurar o tom que desejamos e achar o código hexadecimal que ela representa (em seguida deixarei algumas sugestões de sites). No exemplo abaixo deixei uma cor hexadecimal representada pelo código “#556B2F” que traduz a cor verde oliva (um tom específico de verde).
+                </p>
+                <pre>
+                  <code>
+                    p {
+                      background-color: #556B2F ; /* Fundo verde oliva */
+                      }
+                  </code>
+                </pre>
+                <p>
+                  Existem dois outros tipos de cores que podem ser usadas, conhecidas como RGB e RGBA, mas são maneiras de definir as cores de modo mais avançado, portanto, vamos trabalhar utilizando os nomes de cores e a definição por hexadecimal.
+                </p>
+              </li>
+            </ol>
+          </li>
+
+          <li>Fontes
+            <p>
+              As fontes são elementos fundamentais no design de um site, as fontes transmitem personalidade, legibilidade e influenciam na experiência do usuário.
+            </p>
+            <p>
+              Existem propriedades no CSS que utilizamos para estilizar nosso texto HTML.
+            </p>
+            <ol>
+              <li>font-family: define a família da fonte que esta sendo utilizada.</li>
+              <li>font-size: define o tamanho da fonte, geralmente em pixels (px) ou porcentagens (%).</li>
+              <li>font-weight: define a espessura da fonte, valores podem ser normal (tamanho padrão),bold (negrito) e valores numéricos de 100 a 900 (quanto maior o número, mais espessa a fonte).</li>
+            </ol>
+            <p>
+              No exemplo abaixo definimos a fonte família “Arial” e o estilo da família “sans-serif” (que é uma familia de fonte que são mais simples, retas e limpas e são principamente utilizadas em textos curtos para web), definimos também o tamanho da fonte em 16 pixels e também definimos que nosso texto dentro do nosso seletor “p” será em negrito.
+            </p>
+            <pre>
+              <code>
+                p {
+                  font-family: Arial, sans-serif; /* Fonte família Arial
+                  font-size: 16px; /* Tamanho da fonte 16 pixels */
+                  font-weight: bold; /* Texto em negrito*/
+                  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+
+        <p id="Layout" class="text_content_strong">
+          <strong>Layout</strong>
+        </p>
+        <p class="text_content_medium">
+          O layout no no CSS é como organizamos os elementos de uma página web na tela, criando um desing visualmente agradável e funcional, definindo onde cada elemento vai compor a página e como vão ser organizados entre si.
+        </p>
+        <p class="text_content_medium">
+          Para montar um layout no CSS precisamos conhecer os principais mecanismos para criar, cada feramenta é necessário sendo uma complementar da outra.
+        </p>
+
+        <ul class="text_content_medium">
+          <li id="MDC">Modelo de Caixa
+            <p>
+              Como vimos anteriormente, o CSS se baseia no modelo caixa, onde cada elemento HTML é considerado uma caixa, com margens, bordas, preenchimento e conteúdo. Essa propriedade permite controlar o espaço ao redor de cada elemento.
+            </p>
+            <p>
+              Vou deixar novamente a imagem do modelo caixa do CSS. De maneira que fique mais claro, a parte do meio em lilás o content, nada mais é que o contéudo que estamos estilizando (podemos usar o exemplo da tag <code>&lt;p&gt;</code> do HTML, onde escrevemos uma frase “Frase exemplo estilizada”), fora dessa caixa temos outra caixa nomeada de padding que seria o espaçamento da caixa conteúdo com os demais itens, na caixa em azul border, simoboliza a borda da nossa caixa conteúdo que pode ser estilizada definindo uma borda sólida ao redor, e por fim a última caixa, em laranja, define a margem de espaçamento que vai ser definido para separar esse caixa principal de outra caixa estilizada.
+            </p>
+            <img src="../images/box-model.png" alt="imagem do modelo de caixa">
+          </li>
+
+          <li id="Flex">Flexbox
+            <p>
+              Flexbox é projetado para criar layouts flexíveis, podendo controlar o posicionamento, alinhamento e distribuição de elementos dentro de um container, simplificando a contrução de páginas web. Os conceitos fundamentais presentes no flexbox são o container flex, itens flex e suas direções.
+            </p>
+
+            <ol>
+              <li>Container flex
+                <p>O container flex é o elemento pai (significa que é o elemento que contém outros elementos dentro dele, chamados elementos filhos) onde aplicamos sobre os elementos “filhos”. Declaramos o container flex a partir do “display: flex”. No exemplo estamos fazendo a declaração do display flex (elemento pai), nas próximas linhas inserimos os itens que desejamos posicionar (elementos filhos), veremos melhor a seguir.</p>
+
+                <pre>
+                  <code>
+                    .container {
+                      display: flex;
+                      }  
+                  </code>
+                </pre>
+              </li>
+
+              <li>Flex direction
+                <p>
+                  O flex direction define os eixos em que estamos posicionando nossos elementos, que pode ser em uma linha horizontal ou vertical.
+                </p>
+                <p>
+                  Na imagem a seguir podemos ver duas linhas de intens na horizontal representado pelo “row”, que traduzindo seria linha, uma linha da esquerda para direita e no “row-reverse”, linha invertida, seria a linha da esquerda para direita. Abaixo temos o “column” que significa coluna, onde define a direção de baixo para cima e ao lado a “column-reverse”, coluna invertida, que define a direção de baixo para cima. Esses são as direções que podemos usar no nosso flex-direction.
+                </p>
+                <img src="../images/flex-direction.png" alt="imagem explicativa sobre flex direction">
+              </li>
+
+              <li>Itens flex
+                <p>
+                  Os itens flex são os elementos “filhos” do container flex (pai), o que signfica que eles herdam as propriedades do flexbox e podem ser manipulados de diferentes formas.
+                </p>
+                <ol type="a">
+                  <li>Justify-content
+                    <p>O justify-content ajuda a organizar os itens em uma linha ou coluna. Ele tem quatro opções principais:</p>
+
+                    <ol>
+                      <li>flex-start: Coloca os itens no início (à esquerda ou no topo).</li>
+                      <li>flex-end: Coloca os itens no final (à direita ou embaixo).</li>
+                      <li>center: Centraliza os itens.</li>
+                      <li>space-between: Distribui os itens igualmente, com espaços entre eles.</li>
+                    </ol>
+
+                    <p>Essas opções ajudam a controlar como os itens ficam dispostos no container flex, tornando mais fácil criar layouts organizados.</p>
+                    <img src="../images/Justify-content.png" alt=" imagem explicativa sobre justify content">
+                  </li>
+
+                  <li>Align-content
+                    <p>Align-content é uma ferramenta útil do CSS Flexbox. Ela ajuda a organizar grupos de itens dentro de um container flex. Pense nela como um jeito de arrumar prateleiras em uma estante:
+                    </p>
+                    <ul>
+                      <li>Ela decide como distribuir o espaço extra entre as "prateleiras" (linhas de itens).</li>
+                      <li>Funciona de forma parecida com justify-content, mas em outra direção</li>
+                      <li>Ajuda a dar um visual organizado e equilibrado para seus elementos na página.</li>
+                    </ul>
+                    <p>Com align-content, você pode ajustar facilmente como seus itens ficam dispostos, criando layouts mais bonitos e organizados.</p>
+                    <img src="../images/align-content.png" alt="imagem explicativa sobre align content">
+                  </li>
+
+                  <li>Align-items
+                    <p>Align-items é uma ferramenta do CSS Flexbox que ajuda a organizar os itens dentro de uma caixa flex. Ela controla como os itens se alinham na direção oposta à principal. Por exemplo:</p>
+                    <ul>
+                      <li>Se os itens estão em uma linha (row), o align-items ajusta sua posição vertical.</li>
+                      <li>Se os itens estão em uma coluna (column), ele ajusta sua posição horizontal.</li>
+                    </ul>
+                    <p>Com essa propriedade, você pode facilmente alinhar seus elementos de forma precisa e flexível.</p>
+                    <img src="../images/align-items.png" alt="imagemm explicativa sobre align items">
+                  </li>
+                </ol>
+              </li>
+            </ol>
+
+          </li>
+
+          <li id="Gap">Gap
+            <p>Gap é um recurso do CSS Flexbox que ajuda a criar espaços entre os itens dentro de uma caixa flex. Ele torna mais fácil organizar o layout da página, adicionando espaços iguais entre os elementos. Esses espaços podem ser tanto na direção horizontal quanto na vertical.</p>
+            <img src="../images/gap.png" alt="imagem explicativa sobre gap">
+          </li>
+
+        </ul>
+
+        <p id="Unindo" class="text_content_strong">
+          <strong>Unindo CSS e HTML</strong>
+        </p>
+        <p class="text_content_medium">
+          Unir HTML e CSS refere-se ao processo de integração entre a estrutura HTML e os estilos CSS para criar páginas web visualmente atraentes e funcionais. Isso envolve a aplicação de regras de estilo CSS aos elementos HTML para controlar sua aparência e layout.
+        </p>
+        <img src="../images/uniting.png" alt="imagem demonstrativa sobre html e css">
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <h3>Cursos</h3>
+      <a href="./web.html">HTML</a>
+      <a href="#">CSS</a>
+      <a href="./scratch.html">Scratch</a>
+    </div>
+
+    <div>
+      <h3>Conteúdo adicional</h3>
+      <a href="">Conteúdo</a>
+      <a href="">Conteúdo</a>
+      <a href="">Conteúdo</a>
+    </div>
+
+    <div>
+      <h3>Direitos de uso</h3>
+      <a href="">Conteúdo</a>
+      <a href="">Conteúdo</a>
+      <a href="">Conteúdo</a>
+    </div>
+
+    <div>
+      <h3>Contato & redes sociais</h3>
+      <a href="">email@gmail.com</a>
+      <a href="">youtube.com/@canal</a>
+      <a href="">Conteúdo</a>
+    </div>
+  </footer>
+</body>
+
+</html>

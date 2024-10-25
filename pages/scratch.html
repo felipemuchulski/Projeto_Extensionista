@@ -1,184 +1,244 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/scratch.css"/>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
-    />
-    <!--Adicionei uma biblioteca para dar enfase no pre code para mostrar o código no site-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-    <script>
-      hljs.highlightAll();
-    </script>
-    <title>Scratch - Byte Club</title>
-  </head>
 
-  <body id="scratch">
-    <header>
-      <nav class="header-nav">
-        <a class="nav-item" href="../index.html">
-          <h1>Byte Club</h1>
-        </a>
-        <a class="nav-item" href="../index.html">Menu</a>
-        <a class="nav-item" href="web.html">HTML</a>
-        <a class="nav-item" href="#">Scratch</a>
-        <a class="nav-item" href="conteudo_js.html">CSS</a>
-      </nav>
-      <div class="header-search">
-        <input type="text" id="inptPesquisa" placeholder="Pesquisar..." />
-        <i class="fa-solid fa-magnifying-glass"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/scratch.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" />
+  <!--Adicionei uma biblioteca para dar enfase no pre code para mostrar o código no site-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
+  <title>Scratch - Byte Club</title>
+</head>
+
+<body id="scratch">
+  <header>
+    <nav class="header-nav">
+      <a class="nav-item" href="../index.html">
+        <h1>Byte Club</h1>
+      </a>
+      <a class="nav-item" href="web.html">HTML</a>
+      <a class="nav-item" href="css.html">CSS</a>
+      <a class="nav-item" href="#">Scratch</a>
+    </nav>
+    <div class="header-search">
+      <input type="text" id="inptPesquisa" placeholder="Pesquisar..." />
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+  </header>
+
+  <main>
+    <div>
+      <div class="topics_sidebar">
+        <a href="#oq_e_prog">O que é programação em bloco?</a>
+        <a href="#como_funciona_scrt">Como funciona?</a>
+        <a href="#como_utilizamos">Como utilizamos?</a>
+        <a href="#onde_utiliza">Onde é utilizada?</a>
+        <a href="#logica">Lógica de programação</a>
+        <a href="#logica_scrt">Lógica com Scratch</a>
       </div>
-    </header>
+    </div>
+    <section class="box_text">
+      <div class="bloco_textos">
+        <h1 class="conteudo_titulo">Programação em Bloco</h1>
+        <!--Fazer estilo para introdução-->
+        <p id="oq_e_prog" class="text_content_strong">
+          <strong>O que é progamação em bloco?</strong><br />
+        </p>
+        <!--Separar por tópicos-->
+        <p class="text_content_medium">
+          A programação em blocos é uma abordagem inovadora e visual para a criação de programas de computador. Neste método, os usuários constroem seus programas arrastando e soltando blocos visuais pré-definidos, cada um representando um comando ou função específica.
+        </p>
 
-    <main>
-      <div>
-        <div class="topics_sidebar">
-          <a href="">O que é programação em bloco?</a>
-          <a href="">Como funciona?</a>
-          <a href="">Como utilizamos?</a>
-          <a href="">Onde é utilizada?</a>
-        </div>
+        <p class="text_content_medium">
+          Esta técnica elimina a necessidade de digitar código tradicional, tornando o processo de programação mais acessível e intuitivo, especialmente para iniciantes. Esta forma de programação oferece uma experiência lúdica, permitindo que os estudantes se concentrem na lógica e na estrutura do programa, em vez de se preocuparem com a sintaxe (escrita) complexa das linguagens de programação tradicionais. Ao utilizar blocos coloridos e interativos, a programação em blocos torna mais fácil a visualização do fluxo do programa e a compreensão de conceitos fundamentais de programação.
+        </p>
+
+        <p id="como_funciona_scrt" class="text_content_strong"><strong>Como funciona ?</strong></p>
+        <p class="text_content_medium">
+          A programação em blocos opera de maneira semelhante a um quebra-cabeça digital. Cada bloco representa um comando ou uma instrução específica, e estes blocos são projetados para se encaixarem de maneiras específicas, garantindo que apenas combinações logicamente válidas sejam possíveis.
+        </p>
+        <p class="text_content_medium">
+          Ao montar uma sequência de blocos, o usuário está criando um algoritmo ou um programa. A interface visual permite que os estudantes vejam
+          instantaneamente como os diferentes componentes do programa se relacionam entre si. Isso facilita a compreensão de conceitos como sequência, loops, condicionais e funções de uma maneira mais visível e menos abstrata.
+        </p>
+        <p class="text_content_medium">
+          Para criar um programa usando blocos, o usuário seleciona os blocos desejados de uma caixa de opções disponíveis e os arrasta para a área de trabalho. Os blocos são encaixados na ordem desejada para criar a lógica do programa. Como os blocos são pré-definidos e possuem uma sintaxe correta embutida, o estudante pode se concentrar inteiramente na lógica do programa e no fluxo de execução, em vez de se preocupar com erros de digitação.
+        </p>
+
+        <p id="como_utilizamos" class="text_content_strong"><strong>Como utilizamos</strong></p>
+        <p class="text_content_medium">
+          O processo de utilização da programação em blocos geralmente segue
+          uma série de etapas bem definidas:
+        </p>
+        <ol class="list_content">
+          <li class="text_content_medium">
+            Planejamento: começamos definindo o objetivo do nosso programa.
+            Isso pode ser algo simples como fazer um personagem se mover na
+            tela, ou algo mais complexo como criar um jogo interativo.
+          </li>
+
+          <li class="text_content_medium">
+            Seleção de blocos: com base no objetivo, escolhemos os blocos
+            apropriados que executarão as funções necessárias. Por exemplo, se
+            queremos que um personagem se mova, procuramos blocos relacionados
+            a movimento.
+          </li>
+
+          <li class="text_content_medium">
+            Montagem do programa: arrastamos os blocos selecionados para a
+            área de trabalho central, que geralmente é uma página em branco
+            onde montamos nossa programação. É aqui que a lógica do programa
+            começa a tomar forma.
+          </li>
+
+          <li class="text_content_medium">
+            Organização lógica: encaixamos os blocos de maneira lógica e
+            sequencial. A ordem e a estrutura dos blocos são cruciais, pois
+            determinam como o programa será executado. Por exemplo, se
+            queremos que um personagem se mova e depois faça um som,
+            precisamos garantir que os blocos estejam nessa ordem específica.
+          </li>
+
+          <li class="text_content_medium">
+            Teste e execução: depois montar o programa, podemos executá-lo
+            para ver os resultados. Na maioria das plataformas de programação
+            em blocos, como o Scratch, os resultados são visíveis
+            instantaneamente em uma área de visualização, geralmente
+            localizada no lado direito da tela.
+          </li>
+
+          <li class="text_content_medium">
+            Refinamento: se o programa não funcionar como esperado, podemos
+            facilmente identificar onde estão os problemas, graças à natureza
+            visual dos blocos. Ajustamos a ordem dos blocos, adicionamos ou
+            removemos comandos conforme necessário.
+          </li>
+        </ol>
+
+        <p id="onde_utiliza" class="text_content_strong">
+          <strong>Onde a programação em blocos é utilizada?</strong>
+        </p>
+        <p class="text_content_medium">
+          A programação em blocos tem uso em diversos campos, oferecendo uma abordagem acessível e eficaz para o ensino e a prática da programação. Algumas das principais áreas de utilização:
+        </p>
+        <ul class="list_content text_content_medium">
+          <li class="conteudo_lista">Aprendizado de programação
+            <p>A programação em blocos é amplamente utilizada como ferramenta educacional para introduzir conceitos de programação de forma lúdica e intuitiva. Esta abordagem visual e interativa facilita significativamente o processo de aprendizagem, tornando conceitos abstratos mais compreensíveis para iniciantes de todas as idades. Ao eliminar a barreira da sintaxe complexa, os estudantes podem se concentrar na lógica de programação e no pensamento algorítmico, construindo uma base sólida para futuros estudos em ciência da computação.</p>
+          </li>
+          <li class="conteudo_lista">Criação de jogos
+            <p>Uma das aplicações mais empolgantes da programação em blocos é na de jogos simples. Plataformas como o Scratch permitem que usuários, mesmo sem experiência prévia em programação, desenvolvam jogos interativos usando blocos pré-programados. Esta capacidade não apenas torna o processo de criação de jogos mais acessível, mas também serve como uma excelente ferramenta para ensinar princípios de design de jogos, interatividade e lógica de programação de uma maneira envolvente e criativa.</p>
+          </li>
+          <li class="conteudo_lista">Robótica educacional
+            <p>A programação em blocos desempenha um papel fundamental na introdução à robótica educacional. Muitos kits de robótica, como o Lego Education Mindstorms, utilizam interfaces de programação baseadas em blocos. Esta abordagem permite que estudantes programem robôs de maneira intuitiva, controlando movimentos e sensores. Ao combinar elementos físicos (os robôs) com programação visual, os estudantes podem ver imediatamente os resultados de seu código no mundo real, o que proporciona uma experiência de aprendizado prática e estimulante.</p>
+          </li>
+        </ul>
+        <p id="logica" class="text_content_strong">
+          <strong>Lógica de programação</strong>
+        </p>
+        <p class="text_content_medium">
+          A lógica de programação é a base fundamental sobre o qual se constrói todo o conhecimento em programação. Ela consiste em um conjunto abrangente de regras, princípios e técnicas que os programadores utilizam para projetar, desenvolver e estruturar programas de computador eficientes e funcionais. Mais do que simplesmente escrever código, a lógica de programação envolve a habilidade de pensar de forma analítica e estruturada, permitindo a facilitação de problemas complexos em uma série de etapas mais simples. Esta habilidade de pensamento lógico e estruturado é essencial não apenas para a programação, mas também se aplica a muitas áreas da vida cotidiana. Para ilustrar este conceito de forma mais simples, podemos usar um exemplo familiar: o processo de fazer um bolo. Assim como na programação, fazer um bolo requer seguir uma série de passos específicos em uma ordem determinada, utilizando ingredientes (que poderíamos comparar a variáveis ou dados em programação) nas quantidades corretas.
+        </p>
+        <p class="text_content_medium">Vejamos um exemplo simplificado de como a lógica de programação pode ser aplicada na preparação de um bolo:</p>
+
+        <ol class="text_content_medium">
+          <li>Escolher receita;</li>
+          <li>Selecionar Ingredientes</li>
+          <li>Selecionar recipiente;</li>
+          <li>Adicionar os ingredientes secos;</li>
+          <li>Adicionar os ingredientes líquidos;</li>
+          <li>Misturar muito bem até ficar homogêneo;</li>
+          <li>Despejar a mistura na forma escolhida;</li>
+          <li>Levar ao forno;</li>
+          <li>Retirar o bolo do forno após 40 minutos;</li>
+          <li>Servir o bolo.</li>
+        </ol>
+
+        <p class="text_content_medium">
+          Este exemplo de receita ilustra vários conceitos fundamentais da lógica de programação:
+        </p>
+
+        <ol class="text_content_medium">
+          <li>Sequência: os passos são executados em uma ordem específica, assim como as instruções em um programa de computador.</li>
+          <li>Condicionais (implícitos): embora não estejam explicitamente declarados neste exemplo simples, poderíamos incluir condicionais como "Se a mistura estiver muito seca, adicione mais líquido".</li>
+          <li>Repetição: o passo de misturar até ficar homogêneo implica uma repetição até que uma condição seja atendida.</li>
+          <li>Variáveis: os ingredientes e utensílios podem ser vistos como variáveis em um programa.</li>
+          <li>Entrada e Saída: a seleção de ingredientes é uma forma de entrada, enquanto o bolo servido é a saída.</li>
+        </ol>
+
+        <p class="text_content_medium">É importante notar que esta receita é apenas um exemplo simplificado. Na prática, tanto na culinária quanto na programação, podemos ter processos muito mais complexos, com mais etapas e condicionais. A beleza da lógica de programação está em sua flexibilidade: podemos adaptar, expandir ou simplificar nossos algoritmos conforme necessário para atender a diferentes requisitos ou resolver problemas mais complexos.</p>
+
+        <p class="text_content_medium">Em nossas atividades diárias, frequentemente seguimos sequências lógicas sem perceber conscientemente. No entanto, quando se trata de programação, a definição clara e precisa dessas etapas lógicas assume uma grande importância. Isso ocorre porque, ao contrário de seres humanos que podem inferir informações ou adaptar-se a instruções simples, os computadores requerem instruções extremamente claras e corretas para funcionar corretamente.</p>
+
+        <p id="logica_scrt" class="text_content_strong">
+          <strong>Lógica de programação com Scratch</strong>
+        </p>
+        <p class="text_content_medium">Para compreender melhor como a lógica de programação se aplica em um ambiente de programação em blocos, vamos explorar o Scratch, uma plataforma popular e intuitiva desenvolvida pelo MIT (Massachusetts Instituto de Tecnologia). O Scratch oferece uma analogia visual poderosa para entender conceitos de programação, semelhante à construção com blocos de LEGO.</p>
+
+        <p class="text_content_medium">Imagine que você está construindo um castelo de LEGO. Cada peça de LEGO tem uma função específica e um lugar onde se encaixa perfeitamente. Da mesma forma, no Scratch, cada bloco de código representa uma função ou comando específico. Assim como você seguiria as instruções de um manual para construir um modelo de LEGO, no Scratch você "constrói" seu programa organizando blocos de comando em uma sequência lógica.</p>
+
+        <p class="text_content_medium">O Scratch funciona como um "LEGO digital" para programação, oferecendo uma variedade de blocos coloridos, cada um representando diferentes comandos como movimento, fala, rotação, e muito mais. Estes blocos são projetados para se encaixarem de maneiras específicas, garantindo que apenas combinações logicamente válidas sejam possíveis.</p>
+
+        <p class="text_content_medium">Vamos considerar um exemplo prático para ilustrar como isso funciona:</p>
+
+        <p class="text_content_medium">Suponha que queremos criar um programa simples onde um personagem se move para a direita quando a tecla de seta direita é pressionada. No Scratch, isso seria implementado da seguinte maneira:</p>
+
+        <ol class="text_content_medium">
+          <li>Primeiro, arrastamos um bloco de evento que diz "quando a tecla direita for pressionada". Este bloco serve como o ponto de partida do nosso programa, determinando quando a ação deve ocorrer.</li>
+          <li>Em seguida, conectamos um bloco de movimento que diz "mover 10 passos" logo abaixo do bloco de evento.</li>
+          <li>Pronto! Agora temos um programa funcional. Cada vez que a tecla de seta direita for pressionada, o personagem se moverá 10 passos para a direita.</li>
+        </ol>
+
+        <p class="text_content_medium">Este exemplo simples demonstra vários conceitos fundamentais de programação:</p>
+
+        <ul>
+          <li>Evento: O bloco "quando a tecla direita for pressionada" é um manipulador de eventos, respondendo a uma ação específica do usuário.</li>
+          <li>Sequência: A ordem dos blocos determina a sequência de execução das ações.</li>
+          <li>Ação: O bloco "mover 10 passos" representa uma ação específica que o programa executa.</li>
+        </ul>
+
+        <p class="text_content_medium">À medida que você se familiariza com o Scratch, pode criar programas mais complexos, incorporando loops (repetições), condicionais, variáveis, e até mesmo interações entre múltiplos personagens ou objetos. Cada novo conceito é representado por blocos distintos, permitindo que você construa gradualmente sua compreensão da lógica de programação de uma maneira visual e intuitiva.</p>
+
+        <p class="text_content_medium">A beleza do Scratch e da programação em blocos em geral está em sua capacidade de tornar conceitos abstratos de programação em elementos visuais. Isso não apenas facilita o aprendizado inicial, mas também estabelece uma base sólida para a compreensão de linguagens de programação mais avançadas no futuro.</p>
+
+        <img src="../images/scratchpage.png" alt="">
       </div>
-      <section class="box_text">
-        <div class="bloco_textos">
-          <h1 class="conteudo_titulo">Programação em Bloco</h1>
-          <!--Fazer estilo para introdução-->
-          <p class="text_content_strong">
-            <strong>O que é progamação em bloco?</strong><br />
-          </p>
-          <!--Separar por tópicos-->
-          <p class="text_content_medium">
-            A programação em blocos é uma abordagem inovadora e visual para a
-            criação de programas de computador. Neste método, os usuários
-            constroem seus programas arrastando e soltando blocos visuais
-            pré-definidos, cada um representando um comando ou função
-            específica. Esta técnica elimina a necessidade de digitar código
-            tradicional, tornando o processo de programação mais acessível e
-            intuitivo, especialmente para iniciantes. Esta forma de programação
-            oferece uma experiência lúdica, permitindo que os estudantes se
-            concentrem na lógica e na estrutura do programa, em vez de se
-            preocuparem com a sintaxe (escrita) complexa das linguagens de
-            programação tradicionais. Ao utilizar blocos coloridos e
-            interativos, a programação em blocos torna mais fácil a visualização
-            do fluxo do programa e a compreensão de conceitos fundamentais de
-            programação.
-          </p>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <h3>Cursos</h3>
+      <a href="./web.html">HTML</a>
+      <a href="./css.html">CSS</a>
+      <a href="#">Scratch</a>
+    </div>
 
-          <p class="text_content_strong"><strong>Como funciona ?</strong></p>
-          <p class="text_content_medium">
-            A programação em blocos opera de maneira semelhante a um
-            quebra-cabeça digital. Cada bloco representa um comando ou uma
-            instrução específica, e estes blocos são projetados para se
-            encaixarem de maneiras específicas, garantindo que apenas
-            combinações logicamente válidas sejam possíveis. Ao montar uma
-            sequência de blocos, o usuário está criando um algoritmo ou um
-            programa. A interface visual permite que os estudantes vejam
-            instantaneamente como os diferentes componentes do programa se
-            relacionam entre si. Isso facilita a compreensão de conceitos como
-            sequência, loops, condicionais e funções de uma maneira mais visível
-            e menos abstrata. Para criar um programa usando blocos, o usuário
-            seleciona os blocos desejados de uma caixa de opções disponíveis e
-            os arrasta para a área de trabalho. Os blocos são encaixados na
-            ordem desejada para criar a lógica do programa. Como os blocos são
-            pré-definidos e possuem uma sintaxe correta embutida, o estudante
-            pode se concentrar inteiramente na lógica do programa e no fluxo de
-            execução, em vez de se preocupar com erros de digitação.
-          </p>
-          <pre>
-            <code class="scratch-code">
-                &lt;p>quando clicar em bandeira verde&lt;/p&gt; 
-                &lt;p>p>vá para x: 0 y: 0&lt;/p&gt;
-                &lt;p>mova 10 passos&lt;/p&gt; 
-            </code>
-          </pre>
+    <div>
+      <h3>Conteúdo adicional</h3>
+      <a href="">Conteúdo</a>
+      <a href="">Conteúdo</a>
+      <a href="">Conteúdo</a>
+    </div>
 
-          <p class="text_content_strong"><strong>Como utilizamos</strong></p>
-          <p class="text_content_medium">
-            O processo de utilização da programação em blocos geralmente segue
-            uma série de etapas bem definidas:
-          </p>
-          <ul class="list_content">
-            <li class="text_content_medium">
-              Planejamento: começamos definindo o objetivo do nosso programa.
-              Isso pode ser algo simples como fazer um personagem se mover na
-              tela, ou algo mais complexo como criar um jogo interativo.
-            </li>
+    <div>
+      <h3>Direitos de uso</h3>
+      <a href="">Conteúdo</a>
+      <a href="">Conteúdo</a>
+      <a href="">Conteúdo</a>
+    </div>
 
-            <li class="text_content_medium">
-              Seleção de blocos: com base no objetivo, escolhemos os blocos
-              apropriados que executarão as funções necessárias. Por exemplo, se
-              queremos que um personagem se mova, procuramos blocos relacionados
-              a movimento.
-            </li>
+    <div>
+      <h3>Contato & redes sociais</h3>
+      <a href="">email@gmail.com</a>
+      <a href="">youtube.com/@canal</a>
+      <a href="">Conteúdo</a>
+    </div>
+  </footer>
+</body>
 
-            <li class="text_content_medium">
-              Montagem do programa: arrastamos os blocos selecionados para a
-              área de trabalho central, que geralmente é uma página em branco
-              onde montamos nossa programação. É aqui que a lógica do programa
-              começa a tomar forma.
-            </li>
-
-            <li class="text_content_medium">
-              Organização lógica: encaixamos os blocos de maneira lógica e
-              sequencial. A ordem e a estrutura dos blocos são cruciais, pois
-              determinam como o programa será executado. Por exemplo, se
-              queremos que um personagem se mova e depois faça um som,
-              precisamos garantir que os blocos estejam nessa ordem específica.
-            </li>
-
-            <li class="text_content_medium">
-              Teste e execução: depois montar o programa, podemos executá-lo
-              para ver os resultados. Na maioria das plataformas de programação
-              em blocos, como o Scratch, os resultados são visíveis
-              instantaneamente em uma área de visualização, geralmente
-              localizada no lado direito da tela.
-            </li>
-
-            <li class="text_content_medium">
-              Refinamento: se o programa não funcionar como esperado, podemos
-              facilmente identificar onde estão os problemas, graças à natureza
-              visual dos blocos. Ajustamos a ordem dos blocos, adicionamos ou
-              removemos comandos conforme necessário.
-            </li>
-          </ul>
-
-          <p class="text_content_strong">
-            <strong>Onde a programação em blocos é utilizada?</strong>
-          </p>
-          <p class="text_content_medium">
-            A programação em blocos pode ser utilizada em diferentes atividades,
-            como por exemplo:
-          </p>
-          <ul class="list_content">
-            <li class="conteudo_lista">
-              Aprendizado de programação Introduzindo de forma lúdica a
-              programação, facilitando o processo de aprendizagem.
-            </li>
-            <li class="conteudo_lista">
-              Criação de jogos Com a programação em blocos é possível criar
-              jogos simples através dos blocos pré-programados.
-            </li>
-            <li class="conteudo_lista">
-              Robótica educacional A programação em blocos pode ser utilizada na
-              introdução da robótica através de kits, como por exemplo o Lego
-              Education Mindstorms.
-            </li>
-          </ul>
-
-          <img src="" alt="imagem de um robo criado na robotica" />
-          <p class="text_content_medium">Aqui vamos tocar</p>
-
-          <p><strong>Projeto Extensionista</strong></p>
-        </div>
-      </section>
-    </main>
-  </body>
 </html>

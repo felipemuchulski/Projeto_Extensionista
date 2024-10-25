@@ -1,145 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=\, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css"/>
-    <link rel="stylesheet" href="styles/index.css"/>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <title>Home Page - Byte Club</title>
-  </head>
 
-  <body>
-    <header>
-      <nav class="header-nav">
-        <a class="nav-item" href="index.html">
-          <h1>Byte Club</h1>
-        </a>
-        <a class="nav-item" href="./index.html">Menu</a>
-        <a class="nav-item" href="./pages/web.html">HTML</a>
-        <a class="nav-item" href="./pages/scratch.html">Scratch</a>
-        <a class="nav-item" href="./pages/conteudo_js.html">CSS</a>
-      </nav>
-      <div class="header-search">
-        <input type="text" id="inptPesquisa" placeholder="Pesquisar..." />
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=\, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <title>Home Page - Byte Club</title>
+</head>
 
-    <main>
-      <section class="banner">
-        <div class="banner-text container">
-          <h1>Título do texto introdutivo</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            vitae metus lobortis, bibendum nibh ac, dictum diam. Nunc in mauris
-            leo. Sed commodo, enim sed hendrerit bibendum, quam orci tempor
-            augue, vitae auctor nibh elit sed quam. Cras sollicitudin enim sed
-            neque faucibus maximus. Cras ut urna molestie, gravida velit at,
-            ornare dolor. Nullam justo ante, tincidunt vitae sagittis non,
-            semper vel quam. Phasellus mattis commodo sodales. Nunc elementum ut
-            turpis sit amet euismod. Orci varius natoque penatibus et magnis dis
-            parturient montes, nascetur ridiculus mus. Morbi in diam ac dolor
-            efficitur hendrerit. Nullam eget cursus libero. Pellentesque turpis
-            libero, vehicula quis arcu eu, commodo malesuada velit. Etiam
-            iaculis porta leo ac rhoncus.
-          </p>
-        </div>
-      </section>
-      <section class="s1 container">
-        <h1>Título sect 1</h1>
-        <p>
+<body id="home">
+  <header>
+    <nav class="header-nav">
+      <a class="nav-item" href="index.html">
+        <h1>Byte Club</h1>
+      </a>
+      <a class="nav-item" href="./pages/web.html">HTML</a>
+      <a class="nav-item" href="./pages/css.html">CSS</a>
+      <a class="nav-item" href="./pages/scratch.html">Scratch</a>
+    </nav>
+    <div class="header-search">
+      <input type="text" id="inptPesquisa" placeholder="Pesquisar..." />
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <div class="banner-text container">
+        <h1>Título do texto introdutivo</h1>
+        <p class="text_content_medium">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           vitae metus lobortis, bibendum nibh ac, dictum diam. Nunc in mauris
-          leo. Sed commodo, enim sed hendrerit bibendum, quam orci tempor augue,
-          vitae auctor nibh elit sed quam. Cras sollicitudin enim sed neque
-          faucibus maximus. Cras ut urna molestie, gravida velit at, ornare
-          dolor. Nullam justo ante, tincidunt vitae sagittis non, semper vel
-          quam. Phasellus mattis commodo sodales. Nunc elementum ut turpis sit
-          amet euismod. Orci varius natoque penatibus et magnis dis parturient
-          montes, nascetur ridiculus mus. Morbi in diam ac dolor efficitur
-          hendrerit. Nullam eget cursus libero. Pellentesque turpis libero,
-          vehicula quis arcu eu, commodo malesuada velit. Etiam iaculis porta
-          leo ac rhoncus. Duis in mattis velit. Pellentesque vel sagittis odio,
-          ultricies ullamcorper mauris. Mauris ac nunc quis libero pulvinar
-          sagittis.
+          leo. Sed commodo, enim sed hendrerit bibendum, quam orci tempor
+          augue, vitae auctor nibh elit sed quam. Cras sollicitudin enim sed
+          neque faucibus maximus. Cras ut urna molestie, gravida velit at,
+          ornare dolor. Nullam justo ante, tincidunt vitae sagittis non,
+          semper vel quam. Phasellus mattis commodo sodales. Nunc elementum ut
+          turpis sit amet euismod. Orci varius natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus mus. Morbi in diam ac dolor
+          efficitur hendrerit. Nullam eget cursus libero. Pellentesque turpis
+          libero, vehicula quis arcu eu, commodo malesuada velit. Etiam
+          iaculis porta leo ac rhoncus.
         </p>
-      </section>
-      <section class="container video-section">
-        <div class="youtubeBox">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/ts-H3W1uLMM?si=paWpA5qaViZoQzdH"
-            title="Youtube Player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;   
-            picture-in-picture"
-            allowfullscreen
-          >
-          </iframe>
-        </div>
-      </section>
-      <section class="container courses">
-        <h1>Cursos</h1>
-        <div class="courses-imgs">
-          <a class="html-css" href="./pages/web.html"></a>
-          <a class="scratch" href="./pages/scratch.html"></a>
-          <a class="javascript" href="./pages/conteudo_js.html"></a>
-        </div>
-      </section>
-      <section class="container s2">
-        <h1>Título sect 2</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          vitae metus lobortis, bibendum nibh ac, dictum diam. Nunc in mauris
-          leo. Sed commodo, enim sed hendrerit bibendum, quam orci tempor augue,
-          vitae auctor nibh elit sed quam. Cras sollicitudin enim sed neque
-          faucibus maximus. Cras ut urna molestie, gravida velit at, ornare
-          dolor. Nullam justo ante, tincidunt vitae sagittis non, semper vel
-          quam. Phasellus mattis commodo sodales. Nunc elementum ut turpis sit
-          amet euismod. Orci varius natoque penatibus et magnis dis parturient
-          montes, nascetur ridiculus mus. Morbi in diam ac dolor efficitur
-          hendrerit. Nullam eget cursus libero. Pellentesque turpis libero,
-          vehicula quis arcu eu, commodo malesuada velit. Etiam iaculis porta
-          leo ac rhoncus. Duis in mattis velit. Pellentesque vel sagittis odio,
-          ultricies ullamcorper mauris. Mauris ac nunc quis libero pulvinar
-          sagittis.
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      <div>
-        <h3>Cursos</h3>
-        <a href="">HTML & CSS</a>
-        <a href="">Scratch</a>
-        <a href="">JavaScript</a>
       </div>
-
-      <div>
-        <h3>Conteúdo adicional</h3>
-        <a href="">Conteúdo</a>
-        <a href="">Conteúdo</a>
-        <a href="">Conteúdo</a>
+    </section>
+    <section class="s1 container">
+      <h1>Título sect 1</h1>
+      <p class="text_content_medium">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        vitae metus lobortis, bibendum nibh ac, dictum diam. Nunc in mauris
+        leo. Sed commodo, enim sed hendrerit bibendum, quam orci tempor augue,
+        vitae auctor nibh elit sed quam. Cras sollicitudin enim sed neque
+        faucibus maximus. Cras ut urna molestie, gravida velit at, ornare
+        dolor. Nullam justo ante, tincidunt vitae sagittis non, semper vel
+        quam. Phasellus mattis commodo sodales. Nunc elementum ut turpis sit
+        amet euismod. Orci varius natoque penatibus et magnis dis parturient
+        montes, nascetur ridiculus mus. Morbi in diam ac dolor efficitur
+        hendrerit. Nullam eget cursus libero. Pellentesque turpis libero,
+        vehicula quis arcu eu, commodo malesuada velit. Etiam iaculis porta
+        leo ac rhoncus. Duis in mattis velit. Pellentesque vel sagittis odio,
+        ultricies ullamcorper mauris. Mauris ac nunc quis libero pulvinar
+        sagittis.
+      </p>
+    </section>
+    <section class="container video-section">
+      <div class="youtubeBox">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ts-H3W1uLMM?si=paWpA5qaViZoQzdH" title="Youtube Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;   
+            picture-in-picture" allowfullscreen>
+        </iframe>
       </div>
-
-      <div>
-        <h3>Direitos de uso</h3>
-        <a href="">Conteúdo</a>
-        <a href="">Conteúdo</a>
-        <a href="">Conteúdo</a>
+    </section>
+    <section class="container courses">
+      <h1>Cursos</h1>
+      <div class="courses-imgs">
+        <a class="html" href="./pages/web.html"></a>
+        <a class="css" href="./pages/css.html"></a>
+        <a class="scratch" href="./pages/scratch.html"></a>
+        <!-- <a class="javascript" href="./pages/conteudo_js.html"></a> -->
       </div>
+    </section>
+    <section class="container s2">
+      <h1>Título sect 2</h1>
+      <p class="text_content_medium">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        vitae metus lobortis, bibendum nibh ac, dictum diam. Nunc in mauris
+        leo. Sed commodo, enim sed hendrerit bibendum, quam orci tempor augue,
+        vitae auctor nibh elit sed quam. Cras sollicitudin enim sed neque
+        faucibus maximus. Cras ut urna molestie, gravida velit at, ornare
+        dolor. Nullam justo ante, tincidunt vitae sagittis non, semper vel
+        quam. Phasellus mattis commodo sodales. Nunc elementum ut turpis sit
+        amet euismod. Orci varius natoque penatibus et magnis dis parturient
+        montes, nascetur ridiculus mus. Morbi in diam ac dolor efficitur
+        hendrerit. Nullam eget cursus libero. Pellentesque turpis libero,
+        vehicula quis arcu eu, commodo malesuada velit. Etiam iaculis porta
+        leo ac rhoncus. Duis in mattis velit. Pellentesque vel sagittis odio,
+        ultricies ullamcorper mauris. Mauris ac nunc quis libero pulvinar
+        sagittis.
+      </p>
+    </section>
+  </main>
 
-      <div>
-        <h3>Contato & redes sociais</h3>
-        <a href="">email@gmail.com</a>
-        <a href="">youtube.com/@canal</a>
-        <a href="">Conteúdo</a>
-      </div>
-    </footer>
-  </body>
+  <footer>
+    <div>
+      <h3>Cursos</h3>
+      <a href="./pages/web.html">HTML</a>
+      <a href="./pages/css.html">CSS</a>
+      <a href="./pages/scratch.html">Scratch</a>
+    </div>
+
+    <div>
+      <h3>Conteúdo adicional</h3>
+      <a href="">Conteúdo</a>
+      <a href="">Conteúdo</a>
+      <a href="">Conteúdo</a>
+    </div>
+
+    <div>
+      <h3>Direitos de uso</h3>
+      <a href="">Conteúdo</a>
+      <a href="">Conteúdo</a>
+      <a href="">Conteúdo</a>
+    </div>
+
+    <div>
+      <h3>Contato & redes sociais</h3>
+      <a href="">email@gmail.com</a>
+      <a href="">youtube.com/@canal</a>
+      <a href="">Conteúdo</a>
+    </div>
+  </footer>
+</body>
+
 </html>
