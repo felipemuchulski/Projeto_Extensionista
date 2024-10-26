@@ -268,6 +268,61 @@ input:focus-visible {
   outline: none;
 }
 
+/*Chat do bot*/
+
+.chaticon {
+  background-color: gray;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+
+  position: fixed;
+  right: 1.5%;
+  bottom: 3%;
+
+  cursor: pointer;
+
+  transition: border-radius 0.5s;
+}
+
+.chaticon.expanded {
+  border-radius: 2px 50% 50% 50%;
+}
+
+.chat {
+  border-radius: 15px 15px 2px 15px;
+  background-color: gray;
+  width: 350px;
+  height: 450px;
+
+  position: fixed;
+  right: 4%;
+  bottom: 7.8%;
+  display: flex;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.chat.visible {
+  transition: opacity 0.5s, visibility 0.5s;
+  opacity: 1;
+  visibility: visible;
+}
+
+.chat input {
+  align-self: flex-end;
+  margin-bottom: 15px;
+  width: 80%;
+  height: 25px;
+  padding: 5px;
+  border-radius: 10px;
+
+  border: none;
+}
+
 /* -------------------------------- */
 /*            FOOTER                */
 /* -------------------------------- */
