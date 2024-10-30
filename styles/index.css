@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+.banner p {
+  text-align: center;
+}
+
 /* Courses */
 
 .courses h1 {

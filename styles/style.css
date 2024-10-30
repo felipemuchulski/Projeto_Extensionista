@@ -12,6 +12,12 @@ html {
   scroll-padding-top: 80px;
   scroll-behavior: smooth;
 }
+/* teste de espaçamento nas listas
+ul,
+ol,
+li {
+  margin-left: 10px;
+} */
 
 body {
   margin: 0;
