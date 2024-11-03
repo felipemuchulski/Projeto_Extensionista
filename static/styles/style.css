@@ -288,11 +288,13 @@ input:focus-visible {
 
   cursor: pointer;
 
-  transition: border-radius 0.5s;
+  transition: border-radius 0.5s, right 0.5s;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .chaticon.expanded {
   border-radius: 2px 50% 50% 50%;
+  right: 4%;
 }
 
 .chat {
@@ -304,12 +306,32 @@ input:focus-visible {
   position: fixed;
   right: 4%;
   bottom: 7.8%;
-  display: flex;
-  justify-content: center;
 
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s, visibility 0.5s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  align-items: stretch;     
+  padding: 15px;
+}
+
+.chat input {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 25px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}
+
+.chat button {  
+  width: 100%;  
+  padding: 5px;
+  border-radius: 10px;
+  border: none; 
 }
 
 .chat.visible {
@@ -318,16 +340,34 @@ input:focus-visible {
   visibility: visible;
 }
 
-.chat input {
-  align-self: flex-end;
-  margin-bottom: 15px;
-  width: 80%;
-  height: 25px;
-  padding: 5px;
-  border-radius: 10px;
 
-  border: none;
+#chat-messages {
+  overflow-y: auto; /* Para habilitar a rolagem */
+  max-height: 350px; /* Define uma altura máxima para o chat */
+  padding: 10px;
 }
+
+.user-message, .bot-message, .error-message {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.user-message {
+  background-color: #000000; 
+  align-self: flex-end; /* Alinha à direita */
+  color: #dedee9;
+}
+
+.bot-message {
+  background-color: #131318; 
+  color: #cccce0;
+}
+.error-message {
+  background-color: #fdd5d2; /* Vermelho claro */
+  color: #a80000; /* Vermelho escuro */
+}
+
 
 /* -------------------------------- */
 /*            FOOTER                */

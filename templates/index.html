@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/styles/style.css">
+  <link rel="stylesheet" href="../static/styles/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>Home Page - Byte Club</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body id="home">
+  <header>
+    <nav class="header-nav">
+      <a class="nav-item" href="/templates/index.html">
+        <h1>Byte Club</h1>
+      </a>
+      <a class="nav-item" href="../pages/web.html">HTML</a>
+      <a class="nav-item" href="../pages/css.html">CSS</a>
+      <a class="nav-item" href="../pages/scratch.html">Scratch</a>
+    </nav>
+    <div class="header-search">
+      <input type="text" id="inptPesquisa" placeholder="Pesquisar..." />
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <div class="banner-text container">
+        <h1>Bem-vindo</h1>
+        <p class="text_content_medium">
+          Quer dar seus primeiros passos em direção ao mundo da programação? Então você está no lugar certo!
+        </p>
+      </div>
+    </section>
+    <section class="s1 container">
+      <h1>Quem somos?</h1>
+      <p class="text_content_medium">
+        Somos estudantes de computação assim como você e estamos animados em apresentar nossa página dedicada ao ensino de programação para jovens. Nosso objetivo é apresentar o mundo da programação web, oferecendo um espaço onde você pode aprender HTML e CSS de maneira fácil e divertida
+      </p>
+    </section>
+    <section class="container video-section">
+      <div class="youtubeBox">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ts-H3W1uLMM?si=paWpA5qaViZoQzdH" title="Youtube Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;   
+            picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+    <section class="container courses">
+      <h1>Cursos</h1>
+      <p class="text_content_medium">
+        Aqui, você encontrará tutoriais passo a passo, exemplos práticos e desafios interativos que ajudarão a desenvolver suas habilidades. Além disso, também introduzimos a lógica de programação através do Scratch, uma ferramenta incrível que utiliza blocos para criar projetos interativos e jogos, tornando o aprendizado ainda mais interessante.
+      </p>
+      <div class="courses-imgs">
+        <a class="html" href="../pages/web.html"></a>
+        <a class="css" href="../pages/css.html"></a>
+        <a class="scratch" href="../pages/scratch.html"></a>
+        <!-- <a class="javascript" href="./pages/conteudo_js.html"></a> -->
+      </div>
+    </section>
+    <section class="container s2">
+      <h1>Vamos explorar juntos! 🚀</h1>
+      <p class="text_content_medium">
+        Nosso objetivo é inspirar a próxima geração de programadores, proporcionando um ambiente cheio de recursos. Junte-se a nós nessa jornada e comece a explorar o universo da programação!
+      </p>
+    </section>
+  </main>
+  
+ <!--Bolinha do bot -->
+  <div class="chaticon"></div>
+  <form class="chat" id="bot-form">
+    <div id="chat-messages"></div>
+    <input type="text" name="prompt" id="prompt-input" placeholder="Digite sua pergunta sobre HTML, CSS ou Scratch">
+    <button type="submit">Envie a pergunta</button>
+  </form>
+
+    <script>
+    document.getElementById("bot-form").addEventListener("submit", async function(event) {
+    console.log("Evento de Submit:", event);
+    event.preventDefault();
+    event.stopPropagation();
+
+    const promptInput = document.getElementById("prompt-input");
+    const chatMessages = document.getElementById("chat-messages");
+
+    // Verifica se os elementos existem antes de tentar acessá-los
+    if (!promptInput || !chatMessages) {
+        console.error("Erro: Elementos HTML não encontrados.");
+        return; // Sai da função se os elementos não existirem
+    }
+
+    const question = promptInput.value.trim().toLowerCase(); // trim() e toLowerCase() adicionados
+    promptInput.value = "";
+
+    chatMessages.innerHTML += `<div class="user-message"><b>Você:</b> ${question}</div>`;
+
+    try {
+        const formData = { prompt: question }; // Objeto JavaScript para enviar como JSON
+        console.log("Enviando dados:", formData);
+        console.log("Enviando dados:", JSON.stringify(formData))
+        const response = await fetch("/", {
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' }, // Cabeçalho JSON
+            body: JSON.stringify(formData) // Corpo da requisição em JSON
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.error || "Erro na requisição.");
+        }
+
+        try { // Bloco try-catch para o JSON.parse
+            const responseJson = await response.json();
+            const respostaHTML = marked.parse(responseJson.resposta);
+            chatMessages.innerHTML += `<div class="bot-message"><b>Bot:</b> ${respostaHTML}</div>`;
+        } catch (jsonError) {
+            console.error("Erro ao analisar JSON:", jsonError);
+            chatMessages.innerHTML += `<div class="error-message">Erro: Resposta inválida do servidor (não é JSON).</div>`;
+        }
+
+    } catch (error) {
+        console.error("Erro ao processar a requisição ou a resposta:", error);
+        chatMessages.innerHTML += `<div class="error-message">Erro: ${error.message}</div>`;
+    }
+
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+});
+    </script>
+  
+  <footer>
+    <div>
+      <h3>Cursos</h3>
+      <a href="./pages/web.html">HTML</a>
+      <a href="./pages/css.html">CSS</a>
+      <a href="./pages/scratch.html">Scratch</a>
+    </div>
+
+    <div>
+      <h3>Conteúdo adicional</h3>
+      <a href="">Conteúdo</a>
+      <a href="">Conteúdo</a>
+      <a href="">Conteúdo</a>
+    </div>
+
+    <div>
+      <h3>Direitos de uso</h3>
+      <a href="">Conteúdo</a>
+      <a href="">Conteúdo</a>
+      <a href="">Conteúdo</a>
+    </div>
+
+    <div>
+      <h3>Contato & redes sociais</h3>
+      <a href="">email@gmail.com</a>
+      <a href="">youtube.com/@canal</a>
+      <a href="">Conteúdo</a>
+    </div>
+  </footer>
+  <script src="/static/scripts/main.js"></script>
+</body>
+
+</html>
